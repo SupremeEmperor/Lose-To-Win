@@ -12,6 +12,9 @@ public class dealDamage : MonoBehaviour
         {
             collision.GetComponent<HealthScript>().dealDamage(damage);
         }
-        Destroy(this.gameObject);
+        if(collision.tag != "Player")
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

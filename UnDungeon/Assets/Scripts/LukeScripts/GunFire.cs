@@ -8,11 +8,43 @@ public class GunFire : MonoBehaviour
     public GameObject[] beatTwo;
     public GameObject[] beatThree;
     public GameObject[] beatFour;
+    public int bpm = 60;
+    private int beatCount;
+    private float beatInterval, beatTimer;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        beatCount = 0;
+    }
+
+    private void Update()
+    {
+        BeatFire();
+    }
+
+    public void BeatFire()
+    {
+        bool beatBool = false;
+        beatInterval = bpm / 60;
+        beatTimer += Time.deltaTime;
+        if (beatTimer >= beatInterval)
+        {
+            beatBool = true;
+            beatTimer -= beatInterval;
+            beatCount++;
+            if (beatCount >= 4)
+            {
+                beatCount -= 4;
+            }
+        }
+        if (beatBool)
+        {
+            Fire(beatCount % 4);
+        }
         
+
     }
 
     // Update is called once per frame

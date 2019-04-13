@@ -112,12 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &23543303 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1613086363, guid: e60848566d23b764da19fe6501898a64,
-    type: 3}
-  m_PrefabInstance: {fileID: 3742366423753213089}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &381016227
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,7 +177,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 3
 --- !u!212 &381016230
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -394,62 +388,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 935093013, guid: e60848566d23b764da19fe6501898a64, type: 3}
-      propertyPath: beatOne.Array.data[0]
-      value: 
-      objectReference: {fileID: 23543303}
-    - target: {fileID: 1613086363, guid: e60848566d23b764da19fe6501898a64, type: 3}
-      propertyPath: m_TagString
-      value: Gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 1613086364, guid: e60848566d23b764da19fe6501898a64, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.075
-      objectReference: {fileID: 0}
-    - target: {fileID: 1613086365, guid: e60848566d23b764da19fe6501898a64, type: 3}
-      propertyPath: Xval
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 889413087597653838, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.2588191
-      objectReference: {fileID: 0}
-    - target: {fileID: 889413087597653838, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9659258
-      objectReference: {fileID: 0}
-    - target: {fileID: 889413087597653838, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 9103540506169991945, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: m_TagString
-      value: Gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 8605112140104540320, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.258819
-      objectReference: {fileID: 0}
-    - target: {fileID: 8605112140104540320, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9659259
-      objectReference: {fileID: 0}
-    - target: {fileID: 8605112140104540320, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -30
-      objectReference: {fileID: 0}
-    - target: {fileID: 5420156721267523286, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: m_TagString
-      value: Gun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e60848566d23b764da19fe6501898a64, type: 3}

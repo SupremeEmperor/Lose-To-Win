@@ -14,6 +14,8 @@ public class MovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 force = ();
+        Vector3 force = new Vector3(speed * Input.GetAxis("Horizontal"),speed * Input.GetAxis("Vertical"), 0);
+        gameObject.GetComponent<Rigidbody2D>().AddForce(force);
+
     }
 }

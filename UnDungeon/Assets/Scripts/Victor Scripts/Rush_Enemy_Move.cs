@@ -5,7 +5,7 @@ using UnityEngine;
 public class Rush_Enemy_Move : MonoBehaviour
 {
     private Transform target;
-    public string playerObjectName = "temp name";
+    public string playerObjectName = "Player";
     public int moveSpeed = 2;
     private bool moving = false;
     public float jumpPause = 2f;
@@ -40,7 +40,7 @@ public class Rush_Enemy_Move : MonoBehaviour
     {
         if (moving)
         {
-            target = player.GetComponent<Transform>();
+            target = GameObject.FindWithTag(playerObjectName).GetComponent<Transform>();
             transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
         }
     }
@@ -55,10 +55,5 @@ public class Rush_Enemy_Move : MonoBehaviour
             moving = false;
             Debug.Log("Waited for " + hopTime + " seconds, and it's now " + Time.time);
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        //add damaging code
     }
 }

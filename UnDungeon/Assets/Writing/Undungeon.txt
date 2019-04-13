@@ -1,0 +1,29 @@
+Player Character
+	NAME: ???
+	Motivation: Leave the dungeon. Don't let the artifact gain infinite power.
+	Description: 
+	Background:
+
+Artifact
+	NAME: ???
+	Motivation: Cursed item that thirsts for bloodshed. Keep the player character trapped in the dungeon forever,
+				seducing him with ultimate power until he agrees to serve the artifact and wreak havoc on the world.
+	Description:
+	Background:
+
+Enemies
+	Description: Different enemies per level
+
+Setting
+	Description: Typical fantasy dungeon adventure setting
+
+Plot Stuff
+	Main Conflict: ARTIFACT wants infinite bloodshed, PLAYER CHARACTER just wants to go home.
+	Description: 
+
+
+
+
+
+
+NOTE: As the player gets closer to the exit, they get less powerful. Fewer abilities, less health.

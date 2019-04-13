@@ -13,9 +13,9 @@ public class Rush_Enemy_Move : MonoBehaviour
     public int rotationSpeed = 0;
     public int damageAmt = 10;
     public int expDrop = 5;
-    public Rigidbody2D body;
     public HealthScript healthScript;
     public MovementScript playerScript;
+    public Rigidbody2D body;
     public Spawn_Enemy spawnScript;
     private GameObject player;
     public GameObject drop;
@@ -38,7 +38,10 @@ public class Rush_Enemy_Move : MonoBehaviour
         {
             playerScript.addXP(expDrop);
             spawnScript.enemyDied();
-            Instantiate(drop, transform.position, transform.rotation);
+            if (Random.Range(0, 100) <= 25)
+            {
+                Instantiate(drop, transform.position, transform.rotation);
+            }
             Destroy(this.gameObject);
         }
     }

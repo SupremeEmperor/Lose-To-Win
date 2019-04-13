@@ -13,7 +13,6 @@ public class Rush_Enemy_Move : MonoBehaviour
     public int rotationSpeed = 0;
     public int damageAmt = 10;
     public int expDrop = 5;
-    public Rigidbody2D body;
     public HealthScript healthScript;
     public MovementScript playerScript;
     public Spawn_Enemy spawnScript;
@@ -28,7 +27,6 @@ public class Rush_Enemy_Move : MonoBehaviour
         player = GameObject.FindWithTag(playerObjectName);
         playerScript = (MovementScript)player.GetComponent(typeof(MovementScript));
         spawnScript = (Spawn_Enemy)player.GetComponent(typeof(Spawn_Enemy));
-        body = gameObject.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame

@@ -19,7 +19,9 @@ public class Shield_Enemy_Move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindWithTag(playerObjectName);
+        playerScript = (MovementScript)player.GetComponent(typeof(MovementScript));
+        spawnScript = (Spawn_Enemy)player.GetComponent(typeof(Spawn_Enemy));
     }
 
     // Update is called once per frame
@@ -29,7 +31,10 @@ public class Shield_Enemy_Move : MonoBehaviour
         {
             playerScript.addXP(expDrop);
             spawnScript.enemyDied();
-            Instantiate(drop, transform.position, transform.rotation);
+            if (Random.Range(0, 100) <= 5)
+            {
+                Instantiate(drop, transform.position, transform.rotation);
+            }
             Destroy(this.gameObject);
         }
     }
@@ -38,6 +43,5 @@ public class Shield_Enemy_Move : MonoBehaviour
     {
         target = GameObject.FindWithTag(playerObjectName).GetComponent<Transform>();
         transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
-        //body.velocity = (target.position - transform.position).normalized * moveSpeed;
     }
 }

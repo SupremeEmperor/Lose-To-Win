@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Nichole/MainMenu.unity
+    guid: d1c976662e7bc6541abdb4ea1516761f
+  - enabled: 1
+    path: Assets/Scenes/Nichole/Credits.unity
+    guid: f3284b39fc309624aae426c5546216dd
   m_configObjects: {}

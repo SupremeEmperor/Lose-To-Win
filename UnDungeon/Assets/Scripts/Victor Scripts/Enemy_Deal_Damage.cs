@@ -29,9 +29,12 @@ public class Enemy_Deal_Damage : MonoBehaviour
     {
         while (enabled)
         {
-            collision.GetComponent<HealthScript>().dealDamage(damage);
-            yield return new WaitForSeconds(timeBetweenDamageTick);
-            //Debug.Log("Waited for " + timeBetweenDamageTick + " seconds, and dealt " + damage + " damage.');
+            if (collision.tag == "Player")
+            {
+                collision.GetComponent<HealthScript>().dealDamage(damage);
+                yield return new WaitForSeconds(timeBetweenDamageTick);
+                //Debug.Log("Waited for " + timeBetweenDamageTick + " seconds, and dealt " + damage + " damage.');
+            }
         }
     }
 }

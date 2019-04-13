@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Gun
   - Hitbox
+  - Shotgun
+  - TriShot
   layers:
   - Default
   - TransparentFX

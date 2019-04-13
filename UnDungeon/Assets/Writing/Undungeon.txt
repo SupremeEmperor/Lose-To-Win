@@ -1,29 +1,38 @@
 Player Character
-	NAME: ???
-	Motivation: Leave the dungeon. Don't let the artifact gain infinite power.
-	Description: 
-	Background:
+	NAME:		Rhein
+	Motivation: Leave the dungeon. Don't let the Crown gain infinite power. 
+	Background: Mage adventuring in a dungeon, searching for the rumored treasure at the end of this dugeon.
 
 Artifact
-	NAME: ???
-	Motivation: Cursed item that thirsts for bloodshed. Keep the player character trapped in the dungeon forever,
-				seducing him with ultimate power until he agrees to serve the artifact and wreak havoc on the world.
-	Description:
-	Background:
+	NAME:		Crown of Kha'evos
+	Motivation: Cursed item that thirsts for bloodshed. Keep Rhein trapped in the dungeon forever, seducing him
+				with ultimate power until he agrees to serve the artifact and wreak havoc on the world.
+	Background: Gold crown with blue jewels.
 
 Enemies
-	Description: Different enemies per level
+	Background: Different enemies per level. Guardians of the Crown of Kha'evos, but what adventurers don't know is
+				that they're no supposed to keep people OUT, they're supposed to keep the Crown IN.
 
 Setting
-	Description: Typical fantasy dungeon adventure setting
+	Background: Typical fantasy dungeon adventure setting. This dungeon was sealed by mages ages ago to keep the
+				Crown of Kha'evos from ever getting out.
 
 Plot Stuff
-	Main Conflict: ARTIFACT wants infinite bloodshed, PLAYER CHARACTER just wants to go home.
-	Description: 
+	Conflict:	The Crown of Kha'evos wants infinite bloodshed, Rhein just wants to go home.
+	Descrip.:	The game opens with Rhein standing over a fancy open chest, the Crown already on his head, the final
+				boss of the dungeon lying dead behind him. The Crown speaks, thanking Rhein for releasing him
+				from his prison, and promising great riches if Rhein will only do one thing for him... go into the
+				world and create chaos, feeding the Crown with blood. The more blood, the more power Rhein will
+				achieve. Rhein doesn't like the sound of this, and, frightened, he tries to take the Crown off -
+				but he can't. Suddenly, his magic starts going haywire, spells firing at random. The Crown claims
+				that if Rhein will not seek bloodshed on his own, it can always force his hand. Suddenly, the room
+				fills with enemies. Rhein finds that the more enemies his kills, the more frighteningly gleeful the
+				Crown becomes. Rhein refuses, aiming his attacks as best he can to avoid shooting creatures. Rhein
+				claims that he would prefer weakness over mad chaos and unnecessary bloodshed.
 
-
-
-
-
-
-NOTE: As the player gets closer to the exit, they get less powerful. Fewer abilities, less health.
+				As the player gets closer to the exit, Rhein gets less powerful. Fewer abilities, less health.
+				If the player levels up and has to go back a room, dialogue alludes to Rhein struggling against
+				the tempation of the power offered by the Crown (and the Crown becoming more cocky). As the player
+				levels down and proceeds rooms, the dialogue alludes to Rhein fighting against the temptation and
+				succeeding, while the Crown	grows increasingly desperate and tries to seduce Rhein with the glory
+				it can offer.

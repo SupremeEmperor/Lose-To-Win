@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovementScript : MonoBehaviour
+public class Rush_Enemy_Move : MonoBehaviour
 {
-    public int speed;
+    private GameObject target;
+    public string playerObjectName = "temp name";
+    public int something = 10;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +17,6 @@ public class MovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 force = ();
+        target = GameObject.Find(playerObjectName);
     }
 }

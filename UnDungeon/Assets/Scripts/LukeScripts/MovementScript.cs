@@ -1,0 +1,21 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MovementScript : MonoBehaviour
+{
+    public int speed;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        Vector3 force = new Vector3(speed * Input.GetAxis("Horizontal"),speed * Input.GetAxis("Vertical"), 0);
+        gameObject.GetComponent<Rigidbody2D>().AddForce(force);
+
+    }
+}

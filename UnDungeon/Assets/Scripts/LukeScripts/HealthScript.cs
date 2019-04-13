@@ -34,4 +34,9 @@ public class HealthScript : MonoBehaviour
     {
         return dead;
     }
+
+    public void heal(int healAmt)
+    {
+        health += healAmt;
+    }
 }

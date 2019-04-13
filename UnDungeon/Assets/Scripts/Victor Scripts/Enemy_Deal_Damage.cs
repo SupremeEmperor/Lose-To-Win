@@ -6,28 +6,32 @@ public class Enemy_Deal_Damage : MonoBehaviour
 {
     public int damage;
     public int timeBetweenDamageTick;
+    Coroutine lastRoutine;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
-            StartCoroutine(Deal_Damage(collision));
+            lastRoutine = StartCoroutine(Deal_Damage(collision));
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        StopCoroutine(Deal_Damage(collision));
+        Debug.Log("exited trigger");
+        if (lastRoutine != null)
+        {
+            StopCoroutine(lastRoutine);
+        }
     }
 
     IEnumerator Deal_Damage(Collider2D collision)
     {
         while (enabled)
         {
-            yield return new WaitForSeconds(timeBetweenDamageTick);
             collision.GetComponent<HealthScript>().dealDamage(damage);
-            Debug.Log(collision);
-            Debug.Log("Waited for " + timeBetweenDamageTick + " seconds, and it's now " + Time.time);
+            yield return new WaitForSeconds(timeBetweenDamageTick);
+            //Debug.Log("Waited for " + timeBetweenDamageTick + " seconds, and dealt " + damage + " damage.');
         }
     }
 }

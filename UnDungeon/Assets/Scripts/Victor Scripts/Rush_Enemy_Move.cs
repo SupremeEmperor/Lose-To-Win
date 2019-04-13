@@ -13,9 +13,12 @@ public class Rush_Enemy_Move : MonoBehaviour
     public int rotationSpeed = 0;
     public int damageAmt = 10;
     public int expDrop = 5;
+    public Rigidbody2D body;
     public HealthScript healthScript;
     public MovementScript playerScript;
+    public Spawn_Enemy spawnScript;
     private GameObject player;
+    public GameObject drop;
     
 
     // Start is called before the first frame update
@@ -24,6 +27,8 @@ public class Rush_Enemy_Move : MonoBehaviour
         StartCoroutine(Jump_Loop());
         player = GameObject.FindWithTag(playerObjectName);
         playerScript = (MovementScript)player.GetComponent(typeof(MovementScript));
+        spawnScript = (Spawn_Enemy)player.GetComponent(typeof(Spawn_Enemy));
+        body = gameObject.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -31,8 +36,10 @@ public class Rush_Enemy_Move : MonoBehaviour
     {
         if (healthScript.getDead())
         {
-            Destroy(this.gameObject);
             playerScript.addXP(expDrop);
+            spawnScript.enemyDied();
+            Instantiate(drop, transform.position, transform.rotation);
+            Destroy(this.gameObject);
         }
     }
 
@@ -42,6 +49,7 @@ public class Rush_Enemy_Move : MonoBehaviour
         {
             target = GameObject.FindWithTag(playerObjectName).GetComponent<Transform>();
             transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+            //body.velocity = (target.position - transform.position).normalized * moveSpeed;
         }
     }
 
@@ -53,7 +61,8 @@ public class Rush_Enemy_Move : MonoBehaviour
             moving = true;
             yield return new WaitForSeconds(hopTime);
             moving = false;
-            Debug.Log("Waited for " + hopTime + " seconds, and it's now " + Time.time);
+            body.velocity = Vector3.zero;
+            //Debug.Log("Waited for " + hopTime + " seconds, and it's now " + Time.time);
         }
     }
 }

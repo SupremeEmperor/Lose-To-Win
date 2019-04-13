@@ -5,6 +5,9 @@ using UnityEngine;
 public class Rush_Enemy_Move : MonoBehaviour
 {
     private GameObject target;
+    public string playerObjectName = "temp name";
+    public int something = 10;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +17,6 @@ public class Rush_Enemy_Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        target = GameObject.Find(playerObjectName);
     }
 }

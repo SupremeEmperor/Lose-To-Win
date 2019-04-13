@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovementScript : MonoBehaviour
 {
     public int speed;
-    private int exp;
+    public int exp = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,8 +27,8 @@ public class MovementScript : MonoBehaviour
         gameObject.GetComponent<Rigidbody2D>().AddForce(force);
     }
 
-    public void addXP()
+    public void addXP(int xpAmount)
     {
-
+        exp += xpAmount;
     }
 }

@@ -16,7 +16,7 @@ public class GunFire : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        beatCount = 0;
+        beatCount = 1;
     }
 
     private void Update()
@@ -34,14 +34,17 @@ public class GunFire : MonoBehaviour
             beatBool = true;
             beatTimer -= beatInterval;
             beatCount++;
-            if (beatCount >= 4)
-            {
-                beatCount -= 4;
-            }
         }
+        if(beatCount == 4)
+        {
+            beatCount = 0;
+        }
+
+        
         if (beatBool)
         {
-            Fire(beatCount % 4);
+            int temp = (beatCount % 4);
+            Fire(temp);
         }
         
 
@@ -52,15 +55,48 @@ public class GunFire : MonoBehaviour
     {
         for (int i = 0; i < beatOne.Length; i++)
         {
-            Debug.Log(i);
+            
             switch (beat)
             {
-                case 1:
-                    if(beatOne[i].tag == "Gun")
-                    {
-                        beatOne[i].GetComponent<Shotgun>().Fire();
-                    }
+                case 0:
+                    
+                    
+                        if (beatOne[i].tag == "Shotgun")
+                        {
+                            beatOne[i].GetComponent<Shotgun>().Fire();
+                        }
+
+                        if (beatOne[i].tag == "Laser")
+                        {
+                            //beatOne[i].GetComponent<Laser>().Fire();
+                        }
+
+                        if (beatOne[i].tag == "TriShot")
+                        {
+                            beatOne[i].GetComponent<TriShot>().Fire();
+                        }
                         
+                    break;
+                case 1:
+                    if (beatTwo[i].tag == "Shotgun")
+                    {
+                        beatTwo[i].GetComponent<Shotgun>().Fire();
+                    }
+
+                    break;
+                case 2:
+                    if (beatThree[i].tag == "Shotgun")
+                    {
+                        beatThree[i].GetComponent<Shotgun>().Fire();
+                    }
+
+                    break;
+                case 3:
+                    if (beatFour[i].tag == "Shotgun")
+                    {
+                        beatFour[i].GetComponent<Shotgun>().Fire();
+                    }
+
                     break;
             }
                 

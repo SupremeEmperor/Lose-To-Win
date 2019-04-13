@@ -431,6 +431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 75
+  exp: 0
 --- !u!114 &3742366422971754418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,14 +512,21 @@ MonoBehaviour:
   - {fileID: 8115202117279013376}
   - {fileID: 2159316684213285985}
   beatTwo:
+  - {fileID: 1034014146586538030}
+  - {fileID: 801295598517863264}
+  - {fileID: 1347143803651382917}
+  - {fileID: 1034014146586538030}
+  - {fileID: 1034014146586538030}
+  - {fileID: 1034014146586538030}
+  beatThree:
   - {fileID: 1613086363}
   - {fileID: 9103540506169991945}
   - {fileID: 5420156721267523286}
   - {fileID: 7123964528302465119}
   - {fileID: 8115202117279013376}
   - {fileID: 2159316684213285985}
-  beatThree: []
   beatFour: []
+  bpm: 60
 --- !u!1 &5420156721267523286
 GameObject:
   m_ObjectHideFlags: 0

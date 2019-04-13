@@ -43,5 +43,55 @@ public class Shield_Enemy_Move : MonoBehaviour
     {
         target = GameObject.FindWithTag(playerObjectName).GetComponent<Transform>();
         transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+        if(target.position.x - transform.position.x > 0)
+        {
+            if(target.position.y - transform.position.y > 0)
+            {
+                if (target.position.x - transform.position.x > target.position.y - transform.position.y)
+                {
+                    Debug.Log("Moving Right");
+                }
+                else
+                {
+                    Debug.Log("Moving Up");
+                }
+            }
+            else if (target.position.y - transform.position.y < 0)
+            {
+                if (target.position.x - transform.position.x > -(target.position.y - transform.position.y))
+                {
+                    Debug.Log("Moving Right");
+                }
+                else
+                {
+                    Debug.Log("Moving Down");
+                }
+            }
+        }
+        else if(target.position.x - transform.position.x < 0)
+        {
+            if (target.position.y - transform.position.y > 0)
+            {
+                if (-(target.position.x - transform.position.x) > target.position.y - transform.position.y)
+                {
+                    Debug.Log("Moving Left");
+                }
+                else
+                {
+                    Debug.Log("Moving Up");
+                }
+            }
+            else if (target.position.y - transform.position.y < 0)
+            {
+                if (-(target.position.x - transform.position.x) > -(target.position.y - transform.position.y))
+                {
+                    Debug.Log("Moving Left");
+                }
+                else
+                {
+                    Debug.Log("Moving Down");
+                }
+            }
+        }
     }
 }

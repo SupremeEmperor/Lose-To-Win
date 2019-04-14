@@ -26,8 +26,9 @@ public class HealthScript : MonoBehaviour
         health -= damage;
         if(health <= 0)
         {
-            gameObject.GetComponent<MovementScript>().lvl -= 1;
-            health = gameObject.GetComponent<MovementScript>().lvl * 20;
+            //gameObject.GetComponent<MovementScript>().lvl -= 1;
+            //health = gameObject.GetComponent<MovementScript>().lvl * 20;
+            dead = true;
         }
     }
 

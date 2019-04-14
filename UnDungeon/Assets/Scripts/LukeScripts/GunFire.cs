@@ -12,17 +12,25 @@ public class GunFire : MonoBehaviour
     private int beatCount;
     private float beatInterval, beatTimer;
     public GameObject character;
+    bool shoot;
 
 
     // Start is called before the first frame update
     void Start()
     {
         beatCount = 1;
+        shoot = true;
+    }
+
+    public void setShoot(bool input)
+    {
+        shoot = input;
     }
 
     private void FixedUpdate()
     {
-        BeatFire();
+        if(shoot)
+            BeatFire();
     }
 
     public void BeatFire()

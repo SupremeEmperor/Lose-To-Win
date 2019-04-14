@@ -20,11 +20,11 @@ public class MovementScript : MonoBehaviour
         if(gameObject.GetComponent<HealthScript>().health <= 0)
         {
             lvl -= 1;
-            gameObject.GetComponent<HealthScript>().health = lvl * 20;
+            gameObject.GetComponent<HealthScript>().health = 100;
             if (lvl < 0)
             {
                 lvl = 0;
-                gameObject.GetComponent<HealthScript>().health = 5;
+                gameObject.GetComponent<HealthScript>().health = 100;
             }
         }
     }
@@ -48,9 +48,9 @@ public class MovementScript : MonoBehaviour
             h = 100;
             exp = 0;
         }
-        if (lvl > 5)
+        if (lvl > 4)
         {
-            lvl = 5;
+            lvl = 4;
         }
 
     }

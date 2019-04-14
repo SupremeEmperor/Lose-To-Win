@@ -42,6 +42,12 @@ public class Spawn_Enemy : MonoBehaviour
         lvl = character.GetComponent<MovementScript>().lvl;
     }
 
+    public void Clear()
+    {
+        shooterAmt = 0;
+        enemyAmt = 0;
+    }
+
     IEnumerator Spawn()
     {
         while (enabled)

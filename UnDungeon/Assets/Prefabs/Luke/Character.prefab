@@ -1077,7 +1077,19 @@ MonoBehaviour:
   speed: 150
   exp: 0
   lvl: 4
-  noEnemies: 1
+  noEnemies: 0
+  levelUpDialogue1: {fileID: 0}
+  levelUpDialogue2: {fileID: 0}
+  levelUpDialogue3: {fileID: 0}
+  levelDownTo3: {fileID: 0}
+  levelDownTo2: {fileID: 0}
+  levelDownTo1: {fileID: 0}
+  leveledDownTo3: 0
+  leveledDownTo2: 0
+  leveledDownTo1: 0
+  leveledUp1: 0
+  leveledUp2: 0
+  leveledUp3: 0
 --- !u!114 &3742366422971754418
 MonoBehaviour:
   m_ObjectHideFlags: 0

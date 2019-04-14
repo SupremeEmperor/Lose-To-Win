@@ -11,6 +11,7 @@ public class GunFire : MonoBehaviour
     public int bpm = 60;
     private int beatCount;
     private float beatInterval, beatTimer;
+    public GameObject character;
 
 
     // Start is called before the first frame update
@@ -53,6 +54,8 @@ public class GunFire : MonoBehaviour
     // Update is called once per frame
     public void Fire(int beat)
     {
+        int lvl = character.GetComponent<MovementScript>().lvl;
+
         int temp = 0;
         switch (beat)
         {
@@ -88,7 +91,7 @@ public class GunFire : MonoBehaviour
                             //beatOne[i].GetComponent<Laser>().Fire();
                         }
 
-                        if (beatOne[i].tag == "TriShot")
+                        if (beatOne[i].tag == "TriShot" && lvl >= 2)
                         {
                             beatOne[i].GetComponent<TriShot>().Fire();
                         }

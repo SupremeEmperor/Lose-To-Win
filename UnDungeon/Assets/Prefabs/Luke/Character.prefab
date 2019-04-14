@@ -1074,10 +1074,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af0ea0835fc621246bbd8b24fd0bc673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 150
-  exp: 0
+  speed: 300
+  exp: 100
   lvl: 4
-  noEnemies: 1
+  noEnemies: 0
+  levelUpDialogue1: {fileID: 0}
+  levelUpDialogue2: {fileID: 0}
+  levelUpDialogue3: {fileID: 0}
+  levelDownTo3: {fileID: 0}
+  levelDownTo2: {fileID: 0}
+  levelDownTo1: {fileID: 0}
+  leveledDownTo3: 0
+  leveledDownTo2: 0
+  leveledDownTo1: 0
+  leveledUp1: 0
+  leveledUp2: 0
+  leveledUp3: 0
 --- !u!114 &3742366422971754418
 MonoBehaviour:
   m_ObjectHideFlags: 0

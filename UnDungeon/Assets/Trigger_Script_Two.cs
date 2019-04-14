@@ -38,6 +38,7 @@ public class Trigger_Script_Two : MonoBehaviour
             spawnToDeactivate.SetActive(false);
             spawnToActivate.SetActive(true);
             spawnscript.recalibrate();
+            character.setNoEnemies(false);
         }
     }
 }

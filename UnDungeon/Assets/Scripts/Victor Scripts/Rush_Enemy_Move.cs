@@ -19,7 +19,7 @@ public class Rush_Enemy_Move : MonoBehaviour
     public Spawn_Enemy spawnScript;
     private GameObject player;
     public GameObject drop;
-    
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -50,9 +50,96 @@ public class Rush_Enemy_Move : MonoBehaviour
     {
         if (moving)
         {
+            anim.SetBool("Moving", false);
             target = GameObject.FindWithTag(playerObjectName).GetComponent<Transform>();
             transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+            if (target.position.x - transform.position.x > 0)
+            {
+                if (target.position.y - transform.position.y > 0)
+                {
+                    if (target.position.x - transform.position.x > target.position.y - transform.position.y)
+                    {
+                        Debug.Log("Moving Right");
+                        anim.SetBool("Right", true);
+                        anim.SetBool("Left", false);
+                        anim.SetBool("Forward", false);
+                        anim.SetBool("Backwards", false);
+                    }
+                    else
+                    {
+                        Debug.Log("Moving Up");
+                        anim.SetBool("Backwards", true);
+                        anim.SetBool("Right", false);
+                        anim.SetBool("Left", false);
+                        anim.SetBool("Forward", false);
+                    }
+                }
+                else if (target.position.y - transform.position.y < 0)
+                {
+                    if (target.position.x - transform.position.x > -(target.position.y - transform.position.y))
+                    {
+                        Debug.Log("Moving Right");
+                        anim.SetBool("Right", true);
+                        anim.SetBool("Left", false);
+                        anim.SetBool("Forward", false);
+                        anim.SetBool("Backwards", false);
+                    }
+                    else
+                    {
+                        Debug.Log("Moving Down");
+                        anim.SetBool("Forward", true);
+                        anim.SetBool("Right", false);
+                        anim.SetBool("Left", false);
+                        anim.SetBool("Backwards", false);
+                    }
+                }
+            }
+            else if (target.position.x - transform.position.x < 0)
+            {
+                if (target.position.y - transform.position.y > 0)
+                {
+                    if (-(target.position.x - transform.position.x) > target.position.y - transform.position.y)
+                    {
+                        Debug.Log("Moving Left");
+                        anim.SetBool("Left", true);
+                        anim.SetBool("Backwards", false);
+                        anim.SetBool("Right", false);
+                        anim.SetBool("Forward", false);
+                    }
+                    else
+                    {
+                        Debug.Log("Moving Up");
+                        anim.SetBool("Backwards", true);
+                        anim.SetBool("Right", false);
+                        anim.SetBool("Left", false);
+                        anim.SetBool("Forward", false);
+                    }
+                }
+                else if (target.position.y - transform.position.y < 0)
+                {
+                    if (-(target.position.x - transform.position.x) > -(target.position.y - transform.position.y))
+                    {
+                        Debug.Log("Moving Left");
+                        anim.SetBool("Left", true);
+                        anim.SetBool("Backwards", false);
+                        anim.SetBool("Right", false);
+                        anim.SetBool("Forward", false);
+                    }
+                    else
+                    {
+                        Debug.Log("Moving Down");
+                        anim.SetBool("Forward", true);
+                        anim.SetBool("Right", false);
+                        anim.SetBool("Left", false);
+                        anim.SetBool("Backwards", false);
+                    }
+                }
+            }
             //body.velocity = (target.position - transform.position).normalized * moveSpeed;
+        }
+        else
+        {
+            anim.SetBool("Moving", true);
         }
     }
 

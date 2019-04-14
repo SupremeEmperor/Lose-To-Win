@@ -58,10 +58,11 @@ GameObject:
   - component: {fileID: 8592256074134808419}
   - component: {fileID: 8592256074134808418}
   - component: {fileID: 8592256074134808416}
-  - component: {fileID: 8592256074134808417}
   - component: {fileID: 8592256074134808422}
+  - component: {fileID: 8592256074134808417}
   - component: {fileID: 8592256074134808420}
   - component: {fileID: 8592256074134808421}
+  - component: {fileID: 1400730321094509197}
   m_Layer: 0
   m_Name: Rush Enemy
   m_TagString: Enemy
@@ -153,6 +154,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!58 &8592256074134808422
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8592256074134808445}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.03591981}
+  serializedVersion: 2
+  m_Radius: 0.13591981
 --- !u!114 &8592256074134808417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,22 +194,7 @@ MonoBehaviour:
   body: {fileID: 0}
   spawnScript: {fileID: 0}
   drop: {fileID: 3892661739250303748, guid: 4dcb5c061f6190f43bb450a712000f58, type: 3}
---- !u!58 &8592256074134808422
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8592256074134808445}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.03591981}
-  serializedVersion: 2
-  m_Radius: 0.13591981
+  anim: {fileID: 1400730321094509197}
 --- !u!114 &8592256074134808420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,3 +222,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   spawnScript: {fileID: 0}
+--- !u!95 &1400730321094509197
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8592256074134808445}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a0f61cc78f751df4494f7416ed57624a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

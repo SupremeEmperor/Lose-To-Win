@@ -36,6 +36,7 @@ public class Shooter_Enemy_Move : MonoBehaviour
         {
             playerScript.addXP(expDrop);
             spawnScript.enemyDied();
+            spawnScript.shooterDied();
             if (Random.Range(0, 100) <= 15)
             {
                 Instantiate(drop, transform.position, transform.rotation);

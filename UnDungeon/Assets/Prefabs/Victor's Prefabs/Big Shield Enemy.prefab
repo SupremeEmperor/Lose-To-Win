@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fc7bb3cfc0ae14592b8a6bc5f416cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 20
+  health: 50
 --- !u!114 &8243397179128629339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,11 +210,11 @@ GameObject:
   - component: {fileID: 8243397179167829495}
   m_Layer: 0
   m_Name: Back Shield
-  m_TagString: Wall
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8243397179167829494
 Transform:
   m_ObjectHideFlags: 0
@@ -242,8 +242,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0045271427, y: 0.24660066}
-  m_Size: {x: 0.73539543, y: 0.27883244}
+  m_Offset: {x: 0.12265804, y: 0.24660069}
+  m_Size: {x: 0.5123024, y: 0.27883255}
   m_Direction: 1
 --- !u!1 &8243397179270590338
 GameObject:
@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 8243397179779829287}
   m_Layer: 0
   m_Name: Forward Shield
-  m_TagString: Wall
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -336,8 +336,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.022932498, y: -0.38313434}
-  m_Size: {x: 0.6459516, y: 0.37201425}
+  m_Offset: {x: -0.08760348, y: -0.36804435}
+  m_Size: {x: 0.5166125, y: 0.34183523}
   m_Direction: 1
 --- !u!1 &8243397180205185514
 GameObject:
@@ -351,11 +351,11 @@ GameObject:
   - component: {fileID: 8243397180205185508}
   m_Layer: 0
   m_Name: Right Shield
-  m_TagString: Wall
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8243397180205185515
 Transform:
   m_ObjectHideFlags: 0
@@ -383,8 +383,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.25, y: -0.06}
-  m_Size: {x: 0.2785563, y: 0.8744871}
+  m_Offset: {x: 0.25, y: -0.1914966}
+  m_Size: {x: 0.2785563, y: 0.6114943}
   m_Direction: 0
 --- !u!1 &8243397180695857483
 GameObject:
@@ -398,11 +398,11 @@ GameObject:
   - component: {fileID: 8243397180695857477}
   m_Layer: 0
   m_Name: Left Shield
-  m_TagString: Wall
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8243397180695857476
 Transform:
   m_ObjectHideFlags: 0
@@ -430,6 +430,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.25, y: -0.06}
-  m_Size: {x: 0.2785563, y: 0.8744871}
+  m_Offset: {x: -0.25, y: -0.1914966}
+  m_Size: {x: 0.2785563, y: 0.6114943}
   m_Direction: 0

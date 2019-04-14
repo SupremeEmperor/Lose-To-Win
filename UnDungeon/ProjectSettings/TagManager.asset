@@ -12,6 +12,7 @@ TagManager:
   - Wall
   - Level Display
   - Spawn Locations
+  - Shield
   layers:
   - Default
   - TransparentFX

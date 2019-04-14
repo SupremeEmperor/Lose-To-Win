@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fbbf373a3714094eb39d384a18a4e00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 5
   spawnScript: {fileID: 0}
 --- !u!95 &1400730321094509197
 Animator:

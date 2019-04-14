@@ -5,11 +5,12 @@ using UnityEngine;
 public class Health_Drop : MonoBehaviour
 {
     public int healthHealed;
+    public int timeBeforeDissapear = 12;
         
     // Start is called before the first frame update
     void Start()
     {
-        
+        Destroy(this.gameObject, timeBeforeDissapear);
     }
 
     // Update is called once per frame

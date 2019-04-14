@@ -81,7 +81,7 @@ public class GunFire : MonoBehaviour
                 case 0:
                     //Debug.Log(1);
                     
-                        if (beatOne[i].tag == "Shotgun")
+                        if (beatOne[i].tag == "Shotgun" && lvl > 0)
                         {
                             beatOne[i].GetComponent<Shotgun>().Fire();
                         }
@@ -99,7 +99,7 @@ public class GunFire : MonoBehaviour
                     break;
                 case 1:
                     //Debug.Log(2);
-                    if (beatTwo[i].tag == "Shotgun")
+                    if (beatTwo[i].tag == "Shotgun" && lvl > 0)
                     {
                         beatTwo[i].GetComponent<Shotgun>().Fire();
                     }
@@ -112,7 +112,7 @@ public class GunFire : MonoBehaviour
                     break;
                 case 2:
                     //Debug.Log(3);
-                    if (beatThree[i].tag == "Shotgun")
+                    if (beatThree[i].tag == "Shotgun" && lvl > 0)
                     {
                         beatThree[i].GetComponent<Shotgun>().Fire();
                     }
@@ -124,7 +124,7 @@ public class GunFire : MonoBehaviour
                     break;
                 case 3:
                     Debug.Log(4);
-                    if (beatFour[i].tag == "Shotgun")
+                    if (beatFour[i].tag == "Shotgun" && lvl > 0)
                     {
                         beatFour[i].GetComponent<Shotgun>().Fire();
                     }

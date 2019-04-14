@@ -6,7 +6,6 @@ public class Shooter_Enemy_Move : MonoBehaviour
 {
     private Vector3 target;
     public string playerObjectName = "Player";
-    public int speed = 3;
     public int rotationSpeed = 0;
     public int expDrop = 50;
     public HealthScript healthScript;
@@ -18,7 +17,6 @@ public class Shooter_Enemy_Move : MonoBehaviour
     public Animator anim;
     public int shootPause = 1;
     public GameObject bullet;
-    Vector2 bulletPos;
 
     // Start is called before the first frame update
     void Start()
@@ -51,7 +49,7 @@ public class Shooter_Enemy_Move : MonoBehaviour
         while (enabled)
         {
             target = GameObject.FindWithTag(playerObjectName).GetComponent<Transform>().position;
-            Debug.Log("boop");
+            //Debug.Log("boop");
             if (target.x - transform.position.x > 0)
             {
                 if (target.y - transform.position.y > 0)
@@ -127,13 +125,12 @@ public class Shooter_Enemy_Move : MonoBehaviour
                 }
             }
             yield return new WaitForSeconds(shootPause);
-            shoot(target);
+            shoot();
         }
     }
 
-    public void shoot(Vector3 target)
+    public void shoot()
     {
-        bulletPos = transform.position;
-        Instantiate(bullet, bulletPos, Quaternion.Euler(target)).GetComponent<Rigidbody2D>().velocity = target * speed;
+        Instantiate(bullet, transform.position, Quaternion.identity);
     }
 }

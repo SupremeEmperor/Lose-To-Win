@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shooter_Enemy_Move : MonoBehaviour
 {
-    /*private Transform target;
+    private Transform target;
     public string playerObjectName = "Player";
     public int moveSpeed = 2;
     private bool moving = false;
@@ -16,7 +16,7 @@ public class Shooter_Enemy_Move : MonoBehaviour
     public Spawn_Enemy spawnScript;
     private GameObject player;
     public GameObject drop;
-    public Animator anim;*/
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()

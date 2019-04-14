@@ -29,7 +29,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7448971539331222839}
+  - {fileID: 5311267538521269194}
   - {fileID: 4087024268725957507}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -952,7 +952,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!1001 &2247982171612274433
+--- !u!1001 &3595867387764077052
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -963,11 +963,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PauseMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 8670132944352399945, guid: 5a8cfff657e64264f98ad3417bf39eff,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8670132944352399926, guid: 5a8cfff657e64264f98ad3417bf39eff,
         type: 3}
@@ -1106,9 +1101,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a8cfff657e64264f98ad3417bf39eff, type: 3}
---- !u!224 &7448971539331222839 stripped
+--- !u!224 &5311267538521269194 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8670132944352399926, guid: 5a8cfff657e64264f98ad3417bf39eff,
     type: 3}
-  m_PrefabInstance: {fileID: 2247982171612274433}
+  m_PrefabInstance: {fileID: 3595867387764077052}
   m_PrefabAsset: {fileID: 0}

@@ -38,4 +38,9 @@ public class MovementScript : MonoBehaviour
             exp = 0;
         }
     }
+
+    public int getXP()
+    {
+        return exp;
+    }
 }

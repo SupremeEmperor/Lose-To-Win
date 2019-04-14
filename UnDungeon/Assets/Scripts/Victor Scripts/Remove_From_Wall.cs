@@ -7,21 +7,19 @@ public class Remove_From_Wall : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.tag == "Wall")
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(Vector2.zero, 10, 5);
+        if (colliders.Length > 0)
         {
-            Debug.Log("Hey Kiddo");
-            Destroy(transform.parent.gameObject);
+            foreach (Collider2D col in colliders)
+            {
+                Destroy(col.gameObject);
+            }
         }
     }
 }

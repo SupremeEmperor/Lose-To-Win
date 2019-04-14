@@ -104,7 +104,7 @@ public class GunFire : MonoBehaviour
                         beatTwo[i].GetComponent<Shotgun>().Fire();
                     }
 
-                    if (beatTwo[i].tag == "SpiralShot" && lvl >= 5)
+                    if (beatTwo[i].tag == "SpiralShot" && lvl >= 4)
                     {
                         beatTwo[i].GetComponent<Shotgun>().Fire();
                     }
@@ -117,7 +117,7 @@ public class GunFire : MonoBehaviour
                         beatThree[i].GetComponent<Shotgun>().Fire();
                     }
 
-                    if (beatThree[i].tag == "BounceShot" && lvl >= 4)
+                    if (beatThree[i].tag == "BounceShot" && lvl >= 3)
                     {
                         beatThree[i].GetComponent<Shotgun>().Fire();
                     }

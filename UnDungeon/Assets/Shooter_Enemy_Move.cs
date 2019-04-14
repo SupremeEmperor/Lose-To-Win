@@ -6,7 +6,6 @@ public class Shooter_Enemy_Move : MonoBehaviour
 {
     private Vector3 target;
     public string playerObjectName = "Player";
-    public int speed = 3;
     public int rotationSpeed = 0;
     public int expDrop = 50;
     public HealthScript healthScript;
@@ -18,7 +17,6 @@ public class Shooter_Enemy_Move : MonoBehaviour
     public Animator anim;
     public int shootPause = 1;
     public GameObject bullet;
-    Vector2 bulletPos;
 
     // Start is called before the first frame update
     void Start()
@@ -127,11 +125,11 @@ public class Shooter_Enemy_Move : MonoBehaviour
                 }
             }
             yield return new WaitForSeconds(shootPause);
-            
+            shoot();
         }
     }
 
-    public void shoot(Vector3 target)
+    public void shoot()
     {
         Instantiate(bullet, transform.position, Quaternion.identity);
     }

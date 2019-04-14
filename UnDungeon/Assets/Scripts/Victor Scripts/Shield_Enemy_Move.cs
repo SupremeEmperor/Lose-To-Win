@@ -50,107 +50,87 @@ public class Shield_Enemy_Move : MonoBehaviour
         //logic for setting object direction, shield direction, and animations
         if(target.position.x - transform.position.x > 0)
         {
-            if(target.position.y - transform.position.y > 0)
+            anim.SetBool("Left", false);
+            leftShield.SetActive(false);
+            if (target.position.y - transform.position.y > 0)
             {
+                anim.SetBool("Forward", false);
+                forwardShield.SetActive(false);
                 if (target.position.x - transform.position.x > target.position.y - transform.position.y)
                 {
                     anim.SetBool("Right", true);
-                    anim.SetBool("Left", false);
-                    anim.SetBool("Forward", false);
                     anim.SetBool("Backwards", false);
                     rightShield.SetActive(true);
-                    leftShield.SetActive(false);
-                    forwardShield.SetActive(false);
                     backShield.SetActive(false);
 }
                 else
                 {
                     anim.SetBool("Backwards", true);
                     anim.SetBool("Right", false);
-                    anim.SetBool("Left", false);
-                    anim.SetBool("Forward", false);
                     rightShield.SetActive(false);
-                    leftShield.SetActive(false);
-                    forwardShield.SetActive(false);
                     backShield.SetActive(true);
                 }
             }
             else if (target.position.y - transform.position.y < 0)
             {
+                backShield.SetActive(false);
+                anim.SetBool("Backwards", false);
                 if (target.position.x - transform.position.x > -(target.position.y - transform.position.y))
                 {
                     anim.SetBool("Right", true);
-                    anim.SetBool("Left", false);
                     anim.SetBool("Forward", false);
-                    anim.SetBool("Backwards", false);
                     rightShield.SetActive(true);
-                    leftShield.SetActive(false);
                     forwardShield.SetActive(false);
-                    backShield.SetActive(false);
                 }
                 else
                 {
                     anim.SetBool("Forward", true);
                     anim.SetBool("Right", false);
-                    anim.SetBool("Left", false);
-                    anim.SetBool("Backwards", false);
                     rightShield.SetActive(false);
-                    leftShield.SetActive(false);
                     forwardShield.SetActive(true);
-                    backShield.SetActive(false);
                 }
             }
         }
         else if(target.position.x - transform.position.x < 0)
         {
+            anim.SetBool("Right", false);
+            rightShield.SetActive(false);
             if (target.position.y - transform.position.y > 0)
             {
+                anim.SetBool("Forward", false);
+                forwardShield.SetActive(false);
                 if (-(target.position.x - transform.position.x) > target.position.y - transform.position.y)
                 {
                     anim.SetBool("Left", true);
                     anim.SetBool("Backwards", false);
-                    anim.SetBool("Right", false);
-                    anim.SetBool("Forward", false);
-                    rightShield.SetActive(false);
                     leftShield.SetActive(true);
-                    forwardShield.SetActive(false);
                     backShield.SetActive(false);
                 }
                 else
                 {
                     anim.SetBool("Backwards", true);
-                    anim.SetBool("Right", false);
                     anim.SetBool("Left", false);
-                    anim.SetBool("Forward", false);
-                    rightShield.SetActive(false);
                     leftShield.SetActive(false);
-                    forwardShield.SetActive(false);
                     backShield.SetActive(true);
                 }
             }
             else if (target.position.y - transform.position.y < 0)
             {
+                anim.SetBool("Backwards", false);
+                backShield.SetActive(false);
                 if (-(target.position.x - transform.position.x) > -(target.position.y - transform.position.y))
                 {
                     anim.SetBool("Left", true);
-                    anim.SetBool("Backwards", false);
-                    anim.SetBool("Right", false);
                     anim.SetBool("Forward", false);
-                    rightShield.SetActive(false);
                     leftShield.SetActive(true);
                     forwardShield.SetActive(false);
-                    backShield.SetActive(false);
                 }
                 else
                 {
                     anim.SetBool("Forward", true);
-                    anim.SetBool("Right", false);
                     anim.SetBool("Left", false);
-                    anim.SetBool("Backwards", false);
-                    rightShield.SetActive(false);
                     leftShield.SetActive(false);
                     forwardShield.SetActive(true);
-                    backShield.SetActive(false);
                 }
             }
         }

@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 381016228}
   m_Layer: 0
   m_Name: New Sprite
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -368,12 +368,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &475214399 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3742366422971754415, guid: e60848566d23b764da19fe6501898a64,
-    type: 3}
-  m_PrefabInstance: {fileID: 3742366423753213089}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &511271429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -653,6 +647,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1051394217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1051394219}
+  - component: {fileID: 1051394218}
+  m_Layer: 0
+  m_Name: GameManeger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1051394218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051394217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc90375898bd15b49af079c297d895d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1051394219
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051394217}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6868511, y: -0.035059243, z: 0.119140625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1815394954
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,7 +961,7 @@ PrefabInstance:
     - target: {fileID: 3742366422971754417, guid: e60848566d23b764da19fe6501898a64,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 3742366422971754417, guid: e60848566d23b764da19fe6501898a64,
         type: 3}
@@ -975,92 +1012,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3742366422971754420, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: enemy6
-      value: 
-      objectReference: {fileID: 8243397179128629347, guid: e6d2a533163603a42883c844960154b5,
-        type: 3}
-    - target: {fileID: 3742366422971754420, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: enemy2
-      value: 
-      objectReference: {fileID: 7464826770655924980, guid: 1d8ee9a9c1cb3704982108a32d0b0ffd,
-        type: 3}
-    - target: {fileID: 3742366422971754420, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: enemy3
-      value: 
-      objectReference: {fileID: 6159140663602624462, guid: 4121f73ff1af5564dafb58c7d8772cfb,
-        type: 3}
-    - target: {fileID: 3742366422971754420, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: enemy4
-      value: 
-      objectReference: {fileID: 1002264727964935677, guid: 01720e1351decbc48ba8816a20e48773,
-        type: 3}
-    - target: {fileID: 3742366422971754420, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: enemy5
-      value: 
-      objectReference: {fileID: 5321675116746601559, guid: d50220ce7d478c94b9b94ab15b2393a3,
-        type: 3}
-    - target: {fileID: 3742366422971754420, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: character
-      value: 
-      objectReference: {fileID: 475214399}
-    - target: {fileID: 3742366422971754420, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: maxShooters
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3742366422971754420, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: maxEnemies
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: lvl
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 935093013, guid: e60848566d23b764da19fe6501898a64, type: 3}
-      propertyPath: character
-      value: 
-      objectReference: {fileID: 475214399}
-    - target: {fileID: 729121689, guid: e60848566d23b764da19fe6501898a64, type: 3}
-      propertyPath: m_TagString
-      value: SpiralShot
-      objectReference: {fileID: 0}
-    - target: {fileID: 1563497387, guid: e60848566d23b764da19fe6501898a64, type: 3}
-      propertyPath: m_TagString
-      value: SpiralShot
-      objectReference: {fileID: 0}
-    - target: {fileID: 2016436891, guid: e60848566d23b764da19fe6501898a64, type: 3}
-      propertyPath: m_TagString
-      value: SpiralShot
-      objectReference: {fileID: 0}
-    - target: {fileID: 2026827212, guid: e60848566d23b764da19fe6501898a64, type: 3}
-      propertyPath: m_TagString
-      value: SpiralShot
-      objectReference: {fileID: 0}
-    - target: {fileID: 64302739, guid: e60848566d23b764da19fe6501898a64, type: 3}
-      propertyPath: m_TagString
-      value: BounceShot
-      objectReference: {fileID: 0}
-    - target: {fileID: 1341842205, guid: e60848566d23b764da19fe6501898a64, type: 3}
-      propertyPath: m_TagString
-      value: BounceShot
-      objectReference: {fileID: 0}
-    - target: {fileID: 1925058166, guid: e60848566d23b764da19fe6501898a64, type: 3}
-      propertyPath: m_TagString
-      value: BounceShot
-      objectReference: {fileID: 0}
-    - target: {fileID: 99695781, guid: e60848566d23b764da19fe6501898a64, type: 3}
-      propertyPath: m_TagString
-      value: BounceShot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e60848566d23b764da19fe6501898a64, type: 3}

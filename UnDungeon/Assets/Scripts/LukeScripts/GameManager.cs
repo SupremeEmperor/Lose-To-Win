@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
         }
         if (lastlvl != character.GetComponent<MovementScript>().lvl)
         {
-            lastlvl = character.GetComponent<MovementScript>().lvl;
+            lastlvl = character.GetComponent<MovementScript>().lvl; 
             enemies = GameObject.FindGameObjectsWithTag("Enemy");
             if(enemies.Length != 0)
             {

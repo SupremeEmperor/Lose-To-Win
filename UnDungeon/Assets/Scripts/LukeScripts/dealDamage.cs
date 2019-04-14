@@ -14,9 +14,11 @@ public class dealDamage : MonoBehaviour
             collision.GetComponent<HealthScript>().dealDamage(damage);
         }
         if(collision.tag != "Player" && collision.tag != "Hitbox" )
-        { 
-            Destroy(this.gameObject);
+        {
+            gameObject.GetComponent<Bullet>().speed = 0;
+            gameObject.GetComponent<Animator>().SetBool("Explode", true);
         }
 
     }
+
 }

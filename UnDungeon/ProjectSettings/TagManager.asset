@@ -10,6 +10,7 @@ TagManager:
   - Shotgun
   - TriShot
   - Wall
+  - Level Display
   layers:
   - Default
   - TransparentFX

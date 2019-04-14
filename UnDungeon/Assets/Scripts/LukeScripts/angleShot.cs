@@ -18,7 +18,6 @@ public class angleShot : MonoBehaviour
             bounces--;
             if (bounces <= 0)
             {
-                Debug.Log("here");
                 Destroy(this.gameObject);
             }
         }

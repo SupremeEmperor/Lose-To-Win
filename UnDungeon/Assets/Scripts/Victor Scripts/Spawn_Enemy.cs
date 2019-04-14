@@ -21,6 +21,8 @@ public class Spawn_Enemy : MonoBehaviour
     public GameObject[] availableEnemies;
     public int spawnBatchAmt = 6;
     public bool dialogueDone = true;
+    public GameObject character;
+    private int lvl;
 
 
     // Start is called before the first frame update
@@ -30,19 +32,22 @@ public class Spawn_Enemy : MonoBehaviour
         availableEnemies = new GameObject[] { enemy1, enemy2, enemy3, enemy4, enemy5, enemy6 };
         //to be removed when dialouge is implemented
         startSpawning();
+        character = GameObject.FindGameObjectWithTag("Player");
+        lvl = character.GetComponent<MovementScript>().lvl;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        lvl = character.GetComponent<MovementScript>().lvl;
     }
 
     IEnumerator Spawn()
     {
         while (enabled)
         {
-            if (enemyAmt < maxEnemies)
+            lvl = character.GetComponent<MovementScript>().lvl;
+            if (enemyAmt < maxEnemies && lvl > 0)
             {
                 for (int i = 0; i < spawnBatchAmt; i++)
                 {
@@ -73,7 +78,29 @@ public class Spawn_Enemy : MonoBehaviour
 
     public GameObject getRandomEnemy(GameObject[] enemies)
     {
-        GameObject chosen = enemies[Random.Range(0, enemies.Length)];
+        GameObject chosen;
+        switch (lvl)
+        {
+            case 1:
+                chosen = enemies[Random.Range(0, 1)];
+                break;
+            case 2:
+                chosen = enemies[Random.Range(0, 2)];
+                break;
+            case 3:
+                chosen = enemies[Random.Range(1, 3)];
+                break;
+            case 4:
+                chosen = enemies[Random.Range(2, 5)];
+                break;
+            case 5:
+                chosen = enemies[Random.Range(3, 6)];
+                break;
+            default:
+                chosen = enemies[Random.Range(0, enemies.Length)];
+                break;
+        }
+        
         if (chosen == enemy3 || chosen == enemy6)
         {
             if(shooterAmt < maxShooters)

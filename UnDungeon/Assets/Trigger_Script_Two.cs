@@ -24,7 +24,6 @@ public class Trigger_Script_Two : MonoBehaviour
         if (collision.tag == "Player")
         {
             door.goThroughDoor();
-            movingCamera.transform
         }
     }
 }

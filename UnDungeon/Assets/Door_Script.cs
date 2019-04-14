@@ -10,6 +10,10 @@ public class Door_Script : MonoBehaviour
     public GameObject door2;
     public GameObject door3;
     public GameObject door4;
+    public GameObject door5;
+    public GameObject door6;
+    public GameObject door7;
+    public GameObject door8;
     public MovementScript character;
     public bool passedDoor = false;
     public GameObject doorCheck1;
@@ -34,6 +38,10 @@ public class Door_Script : MonoBehaviour
             door2.SetActive(false);
             door3.SetActive(false);
             door4.SetActive(false);
+            door5.SetActive(false);
+            door6.SetActive(false);
+            door7.SetActive(false);
+            door8.SetActive(false);
         }
         else if (character.lvl == levelToOpen2 && passedDoor)
         {
@@ -42,14 +50,25 @@ public class Door_Script : MonoBehaviour
             door2.SetActive(false);
             door3.SetActive(false);
             door4.SetActive(false);
+            door5.SetActive(false);
+            door6.SetActive(false);
+            door7.SetActive(false);
+            door8.SetActive(false);
         }
-        else
+        else if(passedDoor)
         {
             Debug.Log("Door is closed");
             door1.SetActive(true);
             door2.SetActive(true);
             door3.SetActive(true);
             door4.SetActive(true);
+        }
+        else if(!passedDoor)
+        {
+            door5.SetActive(true);
+            door6.SetActive(true);
+            door7.SetActive(true);
+            door8.SetActive(true);
         }
         if (passedDoor)
         {

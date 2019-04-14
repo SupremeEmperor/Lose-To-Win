@@ -18,9 +18,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (character.GetComponent<MovementScript>().lvl == 0)
+        if (character.GetComponent<MovementScript>().lvl == 4 && lastlvl == 4)
         {
-            //character.GetComponent<MovementScript>().lvl = lastlvl;
+            return;
         }
         if (lastlvl != character.GetComponent<MovementScript>().lvl)
         {

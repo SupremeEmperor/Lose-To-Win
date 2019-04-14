@@ -35,7 +35,11 @@ public class MovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.GetComponent<HealthScript>().health <= 0)
+        if (lvl > 4)
+        {
+            lvl = 4;
+        }
+        if (gameObject.GetComponent<HealthScript>().health <= 0)
         {
             exp = 0;
             lvl -= 1;

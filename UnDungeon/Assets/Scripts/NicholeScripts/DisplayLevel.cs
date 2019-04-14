@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class DisplayLevel : MonoBehaviour
 {
-    public GameObject character;
+    public MovementScript moveScript;
+
+    private void Start()
+    {
+        moveScript = GameObject.FindWithTag("Player").GetComponent<MovementScript>();
+    }
 
     void OnGUI()
     {
@@ -12,6 +17,6 @@ public class DisplayLevel : MonoBehaviour
         UI.font = Resources.Load<Font>("Fonts/Undungeon-normal");
         UI.fontSize = 26;
         UI.normal.textColor = Color.white;
-        GUI.Label(new Rect(16, 10, 100, 100), "Level " + character.GetComponent<MovementScript>().lvl.ToString(), UI);
+        GUI.Label(new Rect(17, 12, 100, 100), "Level " + moveScript.lvl, UI);
     }
 }

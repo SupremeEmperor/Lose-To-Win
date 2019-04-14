@@ -94,7 +94,7 @@ public class Spawn_Enemy : MonoBehaviour
                 chosen = enemies[Random.Range(2, 5)];
                 break;
             case 5:
-                chosen = enemies[Random.Range(3, 6)];
+                chosen = enemies[Random.Range(5, 6)];
                 break;
             default:
                 chosen = enemies[Random.Range(0, enemies.Length)];
@@ -110,7 +110,7 @@ public class Spawn_Enemy : MonoBehaviour
             }
             else
             {
-                return getRandomEnemy(enemies);
+                return enemies[0];
             }
         }
         return chosen;

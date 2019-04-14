@@ -9,10 +9,8 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        foreach (Dialogue d in conversation.conversation)
-        {
-            FindObjectOfType<DialogueManager>().StartDialogue(d);
-        }
+        FindObjectOfType<DialogueManager>().StartDialogue(conversation.conversation);
+
     }
 
 }

@@ -11,7 +11,7 @@ public class Enemy_Deal_Damage : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindWithTag("Player");
-        spawnScript = (Spawn_Enemy)player.GetComponent(typeof(Spawn_Enemy));
+        spawnScript = GameObject.FindWithTag("Player").GetComponent<Spawn_Enemy>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

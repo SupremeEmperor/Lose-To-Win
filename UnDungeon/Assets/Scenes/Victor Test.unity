@@ -6418,7 +6418,12 @@ PrefabInstance:
     - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
         type: 3}
       propertyPath: lvl
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
+        type: 3}
+      propertyPath: exp
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 935093013, guid: e60848566d23b764da19fe6501898a64, type: 3}
       propertyPath: character

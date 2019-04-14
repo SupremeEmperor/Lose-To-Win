@@ -112,7 +112,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &1705920025
+--- !u!1001 &1538761064
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -127,12 +127,12 @@ PrefabInstance:
     - target: {fileID: 3742366422971754417, guid: e60848566d23b764da19fe6501898a64,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.057588696
       objectReference: {fileID: 0}
     - target: {fileID: 3742366422971754417, guid: e60848566d23b764da19fe6501898a64,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.23567119
       objectReference: {fileID: 0}
     - target: {fileID: 3742366422971754417, guid: e60848566d23b764da19fe6501898a64,
         type: 3}
@@ -162,7 +162,7 @@ PrefabInstance:
     - target: {fileID: 3742366422971754417, guid: e60848566d23b764da19fe6501898a64,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3742366422971754417, guid: e60848566d23b764da19fe6501898a64,
         type: 3}
@@ -224,7 +224,7 @@ Transform:
   - {fileID: 1832143213}
   - {fileID: 1874282021}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1832143212
 GameObject:
@@ -4426,7 +4426,6 @@ GameObject:
   - component: {fileID: 1874282024}
   - component: {fileID: 1874282023}
   - component: {fileID: 1874282022}
-  - component: {fileID: 1874282027}
   m_Layer: 0
   m_Name: Walls
   m_TagString: Wall
@@ -6826,18 +6825,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &1874282027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1874282020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 213aad35b3a74594c941a65a945defb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2011942182
 GameObject:
   m_ObjectHideFlags: 0

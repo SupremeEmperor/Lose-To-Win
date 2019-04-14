@@ -10,6 +10,7 @@ public class dealDamage : MonoBehaviour
     {
         if (collision.tag == "Enemy")
         {
+            Debug.Log("Gottem");
             collision.GetComponent<HealthScript>().dealDamage(damage);
         }
         if(collision.tag != "Player" && collision.tag != "Hitbox" )

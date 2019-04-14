@@ -33,7 +33,7 @@ public class Door_Script : MonoBehaviour
     {
         if (character.lvl == levelToOpen1 && !passedDoor)
         {
-            Debug.Log("player did not pass the door and lvl is = to" + levelToOpen1);
+            //Debug.Log("player did not pass the door and lvl is = to" + levelToOpen1);
             door1.SetActive(false);
             door2.SetActive(false);
             door3.SetActive(false);
@@ -45,7 +45,7 @@ public class Door_Script : MonoBehaviour
         }
         else if (character.lvl == levelToOpen2 && passedDoor)
         {
-            Debug.Log("player passed the door and lvl is = to" + levelToOpen2);
+            //Debug.Log("player passed the door and lvl is = to" + levelToOpen2);
             door1.SetActive(false);
             door2.SetActive(false);
             door3.SetActive(false);
@@ -57,14 +57,22 @@ public class Door_Script : MonoBehaviour
         }
         else if(passedDoor)
         {
-            Debug.Log("Door is closed");
+            //Debug.Log("Door is closed");
             door1.SetActive(true);
             door2.SetActive(true);
             door3.SetActive(true);
             door4.SetActive(true);
+            door5.SetActive(false);
+            door6.SetActive(false);
+            door7.SetActive(false);
+            door8.SetActive(false);
         }
         else if(!passedDoor)
         {
+            door1.SetActive(false);
+            door2.SetActive(false);
+            door3.SetActive(false);
+            door4.SetActive(false);
             door5.SetActive(true);
             door6.SetActive(true);
             door7.SetActive(true);

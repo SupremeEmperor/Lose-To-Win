@@ -18,5 +18,9 @@ public class Enemy_Bullet_Damage : MonoBehaviour
             collision.GetComponent<HealthScript>().dealDamage(damage);
             Destroy(this.gameObject);
         }
+        else if (collision.tag == "Wall")
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

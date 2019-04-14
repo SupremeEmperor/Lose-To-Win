@@ -9,6 +9,7 @@ public class Spawn_Enemy : MonoBehaviour
     public GameObject enemy3;
     public GameObject enemy4;
     public GameObject enemy5;
+    public GameObject enemy6;
     public int timeBetweenSpawn;
     public float maxXDistance;
     public float maxYDistance;
@@ -24,7 +25,7 @@ public class Spawn_Enemy : MonoBehaviour
     void Start()
     {
         spawnLocations = GameObject.FindGameObjectsWithTag("Spawn Locations");
-        availableEnemies = new GameObject[] { enemy1, enemy2, enemy3, enemy4, enemy5 };
+        availableEnemies = new GameObject[] { enemy1, enemy2, enemy3, enemy4, enemy5, enemy6 };
         //to be removed when dialouge is implemented
         startSpawning();
     }

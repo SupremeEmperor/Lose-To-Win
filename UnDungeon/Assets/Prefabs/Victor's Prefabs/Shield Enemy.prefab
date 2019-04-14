@@ -193,7 +193,7 @@ MonoBehaviour:
   healthScript: {fileID: 1002264727964935617}
   playerScript: {fileID: 0}
   spawnScript: {fileID: 0}
-  drop: {fileID: 0}
+  drop: {fileID: 3892661739250303748, guid: 4dcb5c061f6190f43bb450a712000f58, type: 3}
   anim: {fileID: 1002264727964935622}
   rightShield: {fileID: 1002264729046848628}
   leftShield: {fileID: 1002264728564589781}

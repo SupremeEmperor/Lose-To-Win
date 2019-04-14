@@ -11,6 +11,8 @@ public class Trigger_Script_One: MonoBehaviour
     public bool moving = false;
     public MovementScript character;
     public int levelToBe;
+    public GameObject spawnToActivate;
+    public GameObject spawnToDeactivate;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +33,8 @@ public class Trigger_Script_One: MonoBehaviour
             Mover.move(moveTo);
             character.lvl = levelToBe;
             character.exp = 0;
+            spawnToDeactivate.SetActive(false);
+            spawnToActivate.SetActive(true);
         }
     }
 }

@@ -13,11 +13,13 @@ public class Trigger_Script_One: MonoBehaviour
     public int levelToBe;
     public GameObject spawnToActivate;
     public GameObject spawnToDeactivate;
+    private Spawn_Enemy spawnscript;
 
     // Start is called before the first frame update
     void Start()
     {
         character = GameObject.FindWithTag("Player").GetComponent<MovementScript>();
+        spawnscript = GameObject.FindWithTag("Player").GetComponent<Spawn_Enemy>();
     }
 
     // Update is called once per frame
@@ -35,6 +37,7 @@ public class Trigger_Script_One: MonoBehaviour
             character.exp = 0;
             spawnToDeactivate.SetActive(false);
             spawnToActivate.SetActive(true);
+            spawnscript.recalibrate();
         }
     }
 }

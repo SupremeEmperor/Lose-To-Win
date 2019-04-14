@@ -124,8 +124,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0028643608, y: 0.027604938}
-  m_Size: {x: 0.6411867, y: 0.6411867}
+  m_Offset: {x: -0.0028643608, y: -0.08351605}
+  m_Size: {x: 0.6411867, y: 0.8634288}
   m_Direction: 0
 --- !u!114 &8243397179128629342
 MonoBehaviour:
@@ -142,8 +142,7 @@ MonoBehaviour:
   playerObjectName: Player
   moveSpeed: 1
   rotationSpeed: 0
-  damageAmt: 10
-  expDrop: 25
+  expDrop: 100
   healthScript: {fileID: 8243397179128629343}
   playerScript: {fileID: 0}
   spawnScript: {fileID: 0}

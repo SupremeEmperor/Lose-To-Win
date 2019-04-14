@@ -31,11 +31,17 @@ public class MovementScript : MonoBehaviour
 
     public void addXP(int xpAmount)
     {
+        int h = gameObject.GetComponent<HealthScript>().health;
         exp += xpAmount;
         if(exp == 100)
         {
             lvl++;
+            h = lvl * 20;
             exp = 0;
+        }
+        if (lvl > 5)
+        {
+            lvl = 5;
         }
     }
 

@@ -8,8 +8,7 @@ public class Shield_Enemy_Move : MonoBehaviour
     public string playerObjectName = "Player";
     public int moveSpeed = 3;
     public int rotationSpeed = 0;
-    public int damageAmt = 10;
-    public int expDrop = 5;
+    public int expDrop = 15;
     public HealthScript healthScript;
     public MovementScript playerScript;
     public Spawn_Enemy spawnScript;
@@ -55,7 +54,6 @@ public class Shield_Enemy_Move : MonoBehaviour
             {
                 if (target.position.x - transform.position.x > target.position.y - transform.position.y)
                 {
-                    Debug.Log("Moving Right");
                     anim.SetBool("Right", true);
                     anim.SetBool("Left", false);
                     anim.SetBool("Forward", false);
@@ -67,7 +65,6 @@ public class Shield_Enemy_Move : MonoBehaviour
 }
                 else
                 {
-                    Debug.Log("Moving Up");
                     anim.SetBool("Backwards", true);
                     anim.SetBool("Right", false);
                     anim.SetBool("Left", false);
@@ -82,7 +79,6 @@ public class Shield_Enemy_Move : MonoBehaviour
             {
                 if (target.position.x - transform.position.x > -(target.position.y - transform.position.y))
                 {
-                    Debug.Log("Moving Right");
                     anim.SetBool("Right", true);
                     anim.SetBool("Left", false);
                     anim.SetBool("Forward", false);
@@ -94,7 +90,6 @@ public class Shield_Enemy_Move : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Moving Down");
                     anim.SetBool("Forward", true);
                     anim.SetBool("Right", false);
                     anim.SetBool("Left", false);
@@ -112,7 +107,6 @@ public class Shield_Enemy_Move : MonoBehaviour
             {
                 if (-(target.position.x - transform.position.x) > target.position.y - transform.position.y)
                 {
-                    Debug.Log("Moving Left");
                     anim.SetBool("Left", true);
                     anim.SetBool("Backwards", false);
                     anim.SetBool("Right", false);
@@ -124,7 +118,6 @@ public class Shield_Enemy_Move : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Moving Up");
                     anim.SetBool("Backwards", true);
                     anim.SetBool("Right", false);
                     anim.SetBool("Left", false);
@@ -139,7 +132,6 @@ public class Shield_Enemy_Move : MonoBehaviour
             {
                 if (-(target.position.x - transform.position.x) > -(target.position.y - transform.position.y))
                 {
-                    Debug.Log("Moving Left");
                     anim.SetBool("Left", true);
                     anim.SetBool("Backwards", false);
                     anim.SetBool("Right", false);
@@ -151,7 +143,6 @@ public class Shield_Enemy_Move : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Moving Down");
                     anim.SetBool("Forward", true);
                     anim.SetBool("Right", false);
                     anim.SetBool("Left", false);

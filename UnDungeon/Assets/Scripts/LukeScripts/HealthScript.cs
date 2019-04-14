@@ -6,6 +6,7 @@ public class HealthScript : MonoBehaviour
 {
     public int health;
     private bool dead;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,8 @@ public class HealthScript : MonoBehaviour
         health -= damage;
         if(health <= 0)
         {
-            dead = true;
+            gameObject.GetComponent<MovementScript>().lvl -= 1;
+            health = gameObject.GetComponent<MovementScript>().lvl * 20;
         }
     }
 

@@ -1076,7 +1076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 150
   exp: 0
-  lvl: 1
+  lvl: 0
 --- !u!114 &3742366422971754418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1124,7 +1124,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0025356784, y: -0.06001103}
+  m_Offset: {x: -0.0025356784, y: -0.2400136}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1135,7 +1135,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2428322, y: 0.5335902}
+  m_Size: {x: 0.2428322, y: 0.17358506}
   m_EdgeRadius: 0
 --- !u!114 &935093013
 MonoBehaviour:
@@ -1204,19 +1204,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy1: {fileID: 8592256074134808445, guid: 4229ad3628d660b4a82e1a91452bbae4, type: 3}
-  enemy2: {fileID: 8592256074134808445, guid: 4229ad3628d660b4a82e1a91452bbae4, type: 3}
-  enemy3: {fileID: 8592256074134808445, guid: 4229ad3628d660b4a82e1a91452bbae4, type: 3}
-  enemy4: {fileID: 8592256074134808445, guid: 4229ad3628d660b4a82e1a91452bbae4, type: 3}
-  enemy5: {fileID: 8592256074134808445, guid: 4229ad3628d660b4a82e1a91452bbae4, type: 3}
-  enemy6: {fileID: 8592256074134808445, guid: 4229ad3628d660b4a82e1a91452bbae4, type: 3}
+  enemy2: {fileID: 1002264727964935677, guid: 01720e1351decbc48ba8816a20e48773, type: 3}
+  enemy3: {fileID: 6159140663602624462, guid: 4121f73ff1af5564dafb58c7d8772cfb, type: 3}
+  enemy4: {fileID: 7464826770655924980, guid: 1d8ee9a9c1cb3704982108a32d0b0ffd, type: 3}
+  enemy5: {fileID: 8243397179128629347, guid: e6d2a533163603a42883c844960154b5, type: 3}
+  enemy6: {fileID: 5321675116746601559, guid: d50220ce7d478c94b9b94ab15b2393a3, type: 3}
   timeBetweenSpawn: 3
   maxXDistance: 5
   maxYDistance: 5
-  maxEnemies: 25
+  enemyAmt: 0
+  maxEnemies: 15
+  shooterAmt: 0
+  maxShooters: 6
   spawnLocations: []
   availableEnemies: []
   spawnBatchAmt: 6
   dialogueDone: 1
+  character: {fileID: 3742366422971754415}
 --- !u!114 &1163955061583134529
 MonoBehaviour:
   m_ObjectHideFlags: 0

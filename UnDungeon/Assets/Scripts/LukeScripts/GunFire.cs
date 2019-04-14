@@ -123,7 +123,7 @@ public class GunFire : MonoBehaviour
                     }
                     break;
                 case 3:
-                    Debug.Log(4);
+
                     if (beatFour[i].tag == "Shotgun" && lvl > 0)
                     {
                         beatFour[i].GetComponent<Shotgun>().Fire();

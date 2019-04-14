@@ -38,6 +38,11 @@ public class Spawn_Enemy : MonoBehaviour
         lvl = character.GetComponent<MovementScript>().lvl;
     }
 
+    public void recalibrate()
+    {
+        spawnLocations = GameObject.FindGameObjectsWithTag("Spawn Locations");
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -46,6 +51,7 @@ public class Spawn_Enemy : MonoBehaviour
 
     public void Clear()
     {
+        //This is a change more
         shooterAmt = 0;
         enemyAmt = 0;
     }

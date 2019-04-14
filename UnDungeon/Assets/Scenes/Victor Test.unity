@@ -6538,6 +6538,48 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
+        type: 3}
+      propertyPath: levelUpDialogue1
+      value: 
+      objectReference: {fileID: 417356676}
+    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
+        type: 3}
+      propertyPath: levelUpDialogue2
+      value: 
+      objectReference: {fileID: 377442268}
+    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
+        type: 3}
+      propertyPath: levelUpDialogue3
+      value: 
+      objectReference: {fileID: 1721866477}
+    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
+        type: 3}
+      propertyPath: levelDownTo3
+      value: 
+      objectReference: {fileID: 1834886386}
+    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
+        type: 3}
+      propertyPath: levelDownTo2
+      value: 
+      objectReference: {fileID: 326338408}
+    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
+        type: 3}
+      propertyPath: levelDownTo1
+      value: 
+      objectReference: {fileID: 1160329709}
+    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
+        type: 3}
+      propertyPath: deathAnim
+      value: 
+      objectReference: {fileID: 3287617760670992416, guid: 177181fb417fe27429049b3267d1928c,
+        type: 3}
+    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
+        type: 3}
+      propertyPath: lvlUpAnim
+      value: 
+      objectReference: {fileID: 5880059036214618344, guid: fc19cc84f1b849c48b410727af5d8061,
+        type: 3}
     - target: {fileID: 3742366422971754415, guid: e60848566d23b764da19fe6501898a64,
         type: 3}
       propertyPath: m_Name
@@ -6598,36 +6640,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: levelUpDialogue1
-      value: 
-      objectReference: {fileID: 417356676}
-    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: levelUpDialogue2
-      value: 
-      objectReference: {fileID: 377442268}
-    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: levelUpDialogue3
-      value: 
-      objectReference: {fileID: 1721866477}
-    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: levelDownTo3
-      value: 
-      objectReference: {fileID: 1834886386}
-    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: levelDownTo2
-      value: 
-      objectReference: {fileID: 326338408}
-    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
-        type: 3}
-      propertyPath: levelDownTo1
-      value: 
-      objectReference: {fileID: 1160329709}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e60848566d23b764da19fe6501898a64, type: 3}
 --- !u!114 &1160329709 stripped

@@ -16,9 +16,10 @@ public class Remove_From_Wall : MonoBehaviour
         Collider2D[] colliders = Physics2D.OverlapCircleAll(Vector2.zero, 10, 5);
         if (colliders.Length > 0)
         {
-            Debug.Log("Colliding with ground!");
+            foreach (Collider2D col in colliders)
+            {
+                Destroy(col.gameObject);
+            }
         }
     }
-
-
 }

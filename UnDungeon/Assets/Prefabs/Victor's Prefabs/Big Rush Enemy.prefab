@@ -187,8 +187,7 @@ MonoBehaviour:
   jumpPause: 1
   hopTime: 1
   rotationSpeed: 10
-  damageAmt: 10
-  expDrop: 5
+  expDrop: 50
   healthScript: {fileID: 7464826770655924973}
   playerScript: {fileID: 0}
   body: {fileID: 0}

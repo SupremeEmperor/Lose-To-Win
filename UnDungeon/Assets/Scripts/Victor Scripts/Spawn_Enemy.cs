@@ -22,6 +22,8 @@ public class Spawn_Enemy : MonoBehaviour
     public int spawnBatchAmt = 6;
     public bool dialogueDone = true;
 
+    //Arrays: [6*1] [1, 2] [1, 2, 3] [1, 2, 3, 4] [1, 2, 3, 4, 5] [1, 2, 3, 4, 5, 6]
+    //Parse in level => From character level, choose a different array
 
     // Start is called before the first frame update
     void Start()

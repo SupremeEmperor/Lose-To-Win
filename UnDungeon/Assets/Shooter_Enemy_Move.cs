@@ -17,6 +17,7 @@ public class Shooter_Enemy_Move : MonoBehaviour
     public Animator anim;
     public int shootPause = 1;
     public GameObject bullet;
+    public GameObject death;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +40,7 @@ public class Shooter_Enemy_Move : MonoBehaviour
             {
                 Instantiate(drop, transform.position, transform.rotation);
             }
+            Instantiate(death, gameObject.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
         gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;

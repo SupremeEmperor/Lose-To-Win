@@ -144,16 +144,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversation:
     conversation:
-    - name: Rhein
-      sentence: test
-    - name: Crown
-      sentence: '!!!'
-    - name: Rhein
-      sentence: no
-    - name: Rhein
-      sentence: stop
-    - name: Crown
-      sentence: testing 1 2 3
+    - name: RHEIN
+      sentence: I won't... let you... use my power.
+    - name: CROWN of KHA'EVOS
+      sentence: It's too late, Rhein. Give in. Look at us - we're unstoppable.
 --- !u!1 &6596952486653333807
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,16 +371,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversation:
     conversation:
-    - name: Rhein
-      sentence: test
-    - name: Crown
-      sentence: '!!!'
-    - name: Rhein
-      sentence: no
-    - name: Rhein
-      sentence: stop
-    - name: Crown
-      sentence: testing 1 2 3
+    - name: ???
+      sentence: 'Ahh... awake at last.
+
+        Thank you, young adventurer.'
+    - name: RHEIN
+      sentence: Wh-Who's speaking?
+    - name: ???
+      sentence: Oh, calm down. You've never heard of a sentient crown before?
+    - name: ???
+      sentence: Surely you knew of the treasures and majesty that awaited your successful
+        plunder of this dungeon?
+    - name: CROWN of KHA'EVOS
+      sentence: The legend of the Crown of Kha'evos?
+    - name: RHEIN
+      sentence: Riches? ... Eternal glory?
+    - name: CROWN of KHA'EVOS
+      sentence: Yes, young one. And I only need one thing from you in return...
+    - name: CROWN of KHA'EVOS
+      sentence: B L O O D.
+    - name: CROWN of KHA'EVOS
+      sentence: "Careful there, you're looking a little faint. Come on, it'll be fun!\r"
+    - name: CROWN of KHA'EVOS
+      sentence: We'll go wreak havoc on the world! It'll be great!
+    - name: CROWN of KHA'EVOS
+      sentence: Just like old times, before I was so rudely, er, forgotten in this
+        dungeon.
+    - name: CROWN of KHA'EVOS
+      sentence: Hey! Are you trying to put me back in the chest?
+    - name: CROWN of KHA'EVOS
+      sentence: That's rude, I thought we were bonding! And here I opened up to you!
+    - name: RHEIN
+      sentence: 'I''m not going to help you hurt people!
+
+        Why can''t I take you off!?'
+    - name: CROWN of KHA'EVOS
+      sentence: Hang on, that's not how this works.
+    - name: CROWN of KHA'EVOS
+      sentence: You made it to the end of the dungeon, you can't just say "no thanks"
+        to your prize.
+    - name: RHEIN
+      sentence: You're no prize. You're a curse.
+    - name: CROWN of KHA'EVOS
+      sentence: A curse? Is that what you think of me?
+    - name: CROWN of KHA'EVOS
+      sentence: Allow me to demonstrate what you could be with my help.
+    - name: RHEIN
+      sentence: No! I won't let you use me.
+    - name: CROWN of KHA'EVOS
+      sentence: Oh, young adventurer...
+    - name: CROWN of KHA'EVOS
+      sentence: You don't have a choice.
+    - name: RHEIN
+      sentence: '... Yes, I do.'
+    - name: RHEIN
+      sentence: I can give up my powers and leave you trapped here.
+    - name: RHEIN
+      sentence: I can prevent you from using my abilities for violence.
+    - name: CROWN of KHA'EVOS
+      sentence: You don't have the strength to resist me.
 --- !u!1 &6596952486905395490
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,16 +574,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversation:
     conversation:
-    - name: Rhein
-      sentence: test
-    - name: Crown
-      sentence: '!!!'
-    - name: Rhein
-      sentence: no
-    - name: Rhein
-      sentence: stop
-    - name: Crown
-      sentence: testing 1 2 3
+    - name: CROWN of KHA'EVOS
+      sentence: Hahahahaha!
 --- !u!1 &6596952486973648344
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,16 +957,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversation:
     conversation:
-    - name: Rhein
-      sentence: test
-    - name: Crown
-      sentence: '!!!'
-    - name: Rhein
-      sentence: no
-    - name: Rhein
-      sentence: stop
-    - name: Crown
-      sentence: testing 1 2 3
+    - name: CROWN of KHA'EVOS
+      sentence: You must be scared, young one.
+    - name: RHEIN
+      sentence: '...'
+    - name: CROWN of KHA'EVOS
+      sentence: You have lost nearly half of your power.
+    - name: CROWN of KHA'EVOS
+      sentence: I could give it back, a hundred times over.
 --- !u!1 &6596952487349494777
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,16 +1188,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversation:
     conversation:
+    - name: CROWN of KHA'EVOS
+      sentence: Yes, Rhein, feel yourself grow stronger.
+    - name: CROWN of KHA'EVOS
+      sentence: This is what we can do if we work together.
     - name: Rhein
-      sentence: test
-    - name: Crown
-      sentence: '!!!'
-    - name: Rhein
-      sentence: no
-    - name: Rhein
-      sentence: stop
-    - name: Crown
-      sentence: testing 1 2 3
+      sentence: No!
 --- !u!1 &6596952487561609457
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,16 +1417,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversation:
     conversation:
-    - name: Rhein
-      sentence: test
-    - name: Crown
-      sentence: '!!!'
-    - name: Rhein
-      sentence: no
-    - name: Rhein
-      sentence: stop
-    - name: Crown
-      sentence: testing 1 2 3
+    - name: CROWN of KHA'EVOS
+      sentence: Your power dwindles, young adventurer.
+    - name: RHEIN
+      sentence: My name is Rhein, and I am still stronger than you.
+    - name: CROWN of KHA'EVOS
+      sentence: Are you?
 --- !u!1 &6596952487789843386
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,16 +1567,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversation:
     conversation:
-    - name: Rhein
-      sentence: test
-    - name: Crown
-      sentence: '!!!'
-    - name: Rhein
-      sentence: no
-    - name: Rhein
-      sentence: stop
-    - name: Crown
-      sentence: testing 1 2 3
+    - name: RHEIN
+      sentence: I told you I was stronger than you, even without my magic.
+    - name: RHEIN
+      sentence: I'm useless to you now.
+    - name: RHEIN
+      sentence: My magic is gone - I can no longer be your vessel.
+    - name: CROWN of KHA'EVOS
+      sentence: NO!
+    - name: RHEIN
+      sentence: I understand now.
+    - name: RHEIN
+      sentence: This dungeon isn't meant to keep adventurers out...
+    - name: RHEIN
+      sentence: it's supposed to keep you in.
+    - name: RHEIN
+      sentence: And you will be trapped here for a very, very long time.
+    - name: CROWN of KHA'EVOS
+      sentence: Think of the power, Rhein, the glory.
+    - name: CROWN of KHA'EVOS
+      sentence: Nations would fall at your feet. Mountains of gold, jewels, the finest
+        wine.
+    - name: CROWN of KHA'EVOS
+      sentence: It could all be yours, Rhein, it could all be-
 --- !u!1 &6596952488177510775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1854,16 +1892,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversation:
     conversation:
-    - name: Rhein
-      sentence: test
-    - name: Crown
-      sentence: '!!!'
-    - name: Rhein
-      sentence: no
-    - name: Rhein
-      sentence: stop
-    - name: Crown
-      sentence: testing 1 2 3
+    - name: CROWN of KHA'EVOS
+      sentence: You're getting weaker, young adventurer.
+    - name: CROWN of KHA'EVOS
+      sentence: Think of all the progress you made.
+    - name: CROWN of KHA'EVOS
+      sentence: All the spells you learned, all the strength you gained... all for
+        nothing.
+    - name: RHEIN
+      sentence: Shut up.
+    - name: CROWN of KHA'EVOS
+      sentence: I can feel you fighting me. Stop fighting. Let go.
+    - name: CROWN of KHA'EVOS
+      sentence: Let me give you everything you've ever dreamed of.
+    - name: RHEIN
+      sentence: '...'
+    - name: CROWN of KHA'EVOS
+      sentence: Fine.
+    - name: CROWN of KHA'EVOS
+      sentence: Then you'll be trapped here forever, serving me whether you like it
+        or not.
 --- !u!1 &7987996663280904725
 GameObject:
   m_ObjectHideFlags: 0

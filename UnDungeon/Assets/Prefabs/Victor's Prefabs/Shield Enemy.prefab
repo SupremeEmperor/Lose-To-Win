@@ -199,6 +199,7 @@ MonoBehaviour:
   leftShield: {fileID: 1002264728564589781}
   forwardShield: {fileID: 1002264728716731323}
   backShield: {fileID: 1002264728009621611}
+  death: {fileID: 3287617760670992416, guid: 177181fb417fe27429049b3267d1928c, type: 3}
 --- !u!114 &1002264727964935617
 MonoBehaviour:
   m_ObjectHideFlags: 0

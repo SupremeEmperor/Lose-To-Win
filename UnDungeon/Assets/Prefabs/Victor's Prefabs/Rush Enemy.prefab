@@ -193,6 +193,7 @@ MonoBehaviour:
   spawnScript: {fileID: 0}
   drop: {fileID: 3892661739250303748, guid: 4dcb5c061f6190f43bb450a712000f58, type: 3}
   anim: {fileID: 1400730321094509197}
+  death: {fileID: 3287617760670992416, guid: 177181fb417fe27429049b3267d1928c, type: 3}
 --- !u!114 &8592256074134808420
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1074,8 +1074,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af0ea0835fc621246bbd8b24fd0bc673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 150
-  exp: 0
+  speed: 300
+  exp: 100
   lvl: 4
   noEnemies: 0
   levelUpDialogue1: {fileID: 0}

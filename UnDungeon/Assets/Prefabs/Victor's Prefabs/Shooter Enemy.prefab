@@ -118,7 +118,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObjectName: Player
-  speed: 1
   rotationSpeed: 0
   expDrop: 5
   healthScript: {fileID: 6159140663602624458}
@@ -128,6 +127,7 @@ MonoBehaviour:
   anim: {fileID: 6159140663602624500}
   shootPause: 3
   bullet: {fileID: 2505974302247748113, guid: d9e48f2794351c841acd5cbe8516d4db, type: 3}
+  death: {fileID: 3287617760670992416, guid: 177181fb417fe27429049b3267d1928c, type: 3}
 --- !u!114 &6159140663602624458
 MonoBehaviour:
   m_ObjectHideFlags: 0

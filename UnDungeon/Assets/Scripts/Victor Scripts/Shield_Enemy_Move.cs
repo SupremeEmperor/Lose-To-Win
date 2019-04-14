@@ -19,6 +19,7 @@ public class Shield_Enemy_Move : MonoBehaviour
     public GameObject leftShield;
     public GameObject forwardShield;
     public GameObject backShield;
+    public GameObject death;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +40,7 @@ public class Shield_Enemy_Move : MonoBehaviour
             {
                 Instantiate(drop, transform.position, transform.rotation);
             }
+            Instantiate(death, gameObject.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
     }

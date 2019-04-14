@@ -18,6 +18,7 @@ public class Rush_Enemy_Move : MonoBehaviour
     private GameObject player;
     public GameObject drop;
     public Animator anim;
+    public GameObject death;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,7 @@ public class Rush_Enemy_Move : MonoBehaviour
             {
                 Instantiate(drop, transform.position, transform.rotation);
             }
+            Instantiate(death, gameObject.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
     }

@@ -20,7 +20,7 @@ public class GunFire : MonoBehaviour
         beatCount = 1;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         BeatFire();
     }

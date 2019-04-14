@@ -11,11 +11,9 @@ public class Rush_Enemy_Move : MonoBehaviour
     public float jumpPause = 2f;
     public float hopTime = 1f;
     public int rotationSpeed = 0;
-    public int damageAmt = 10;
     public int expDrop = 5;
     public HealthScript healthScript;
     public MovementScript playerScript;
-    public Rigidbody2D body;
     public Spawn_Enemy spawnScript;
     private GameObject player;
     public GameObject drop;
@@ -28,7 +26,8 @@ public class Rush_Enemy_Move : MonoBehaviour
         player = GameObject.FindWithTag(playerObjectName);
         playerScript = (MovementScript)player.GetComponent(typeof(MovementScript));
         spawnScript = (Spawn_Enemy)player.GetComponent(typeof(Spawn_Enemy));
-        body = gameObject.GetComponent<Rigidbody2D>();
+        anim.SetBool("Moving", true);
+
     }
 
     // Update is called once per frame
@@ -38,19 +37,23 @@ public class Rush_Enemy_Move : MonoBehaviour
         {
             playerScript.addXP(expDrop);
             spawnScript.enemyDied();
-            if (Random.Range(0, 100) <= 25)
+            if (Random.Range(0, 100) <= 15)
             {
                 Instantiate(drop, transform.position, transform.rotation);
             }
             Destroy(this.gameObject);
         }
+    }
+
+    private void FixedUpdate()
+    {
+        target = GameObject.FindWithTag(playerObjectName).GetComponent<Transform>();
         if (target.position.x - transform.position.x > 0)
         {
             if (target.position.y - transform.position.y > 0)
             {
                 if (target.position.x - transform.position.x > target.position.y - transform.position.y)
                 {
-                    Debug.Log("Moving Right");
                     anim.SetBool("Right", true);
                     anim.SetBool("Left", false);
                     anim.SetBool("Forward", false);
@@ -58,7 +61,6 @@ public class Rush_Enemy_Move : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Moving Up");
                     anim.SetBool("Backwards", true);
                     anim.SetBool("Right", false);
                     anim.SetBool("Left", false);
@@ -69,7 +71,6 @@ public class Rush_Enemy_Move : MonoBehaviour
             {
                 if (target.position.x - transform.position.x > -(target.position.y - transform.position.y))
                 {
-                    Debug.Log("Moving Right");
                     anim.SetBool("Right", true);
                     anim.SetBool("Left", false);
                     anim.SetBool("Forward", false);
@@ -77,7 +78,6 @@ public class Rush_Enemy_Move : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Moving Down");
                     anim.SetBool("Forward", true);
                     anim.SetBool("Right", false);
                     anim.SetBool("Left", false);
@@ -91,7 +91,6 @@ public class Rush_Enemy_Move : MonoBehaviour
             {
                 if (-(target.position.x - transform.position.x) > target.position.y - transform.position.y)
                 {
-                    Debug.Log("Moving Left");
                     anim.SetBool("Left", true);
                     anim.SetBool("Backwards", false);
                     anim.SetBool("Right", false);
@@ -99,7 +98,6 @@ public class Rush_Enemy_Move : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Moving Up");
                     anim.SetBool("Backwards", true);
                     anim.SetBool("Right", false);
                     anim.SetBool("Left", false);
@@ -110,7 +108,6 @@ public class Rush_Enemy_Move : MonoBehaviour
             {
                 if (-(target.position.x - transform.position.x) > -(target.position.y - transform.position.y))
                 {
-                    Debug.Log("Moving Left");
                     anim.SetBool("Left", true);
                     anim.SetBool("Backwards", false);
                     anim.SetBool("Right", false);
@@ -118,7 +115,6 @@ public class Rush_Enemy_Move : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Moving Down");
                     anim.SetBool("Forward", true);
                     anim.SetBool("Right", false);
                     anim.SetBool("Left", false);
@@ -126,15 +122,15 @@ public class Rush_Enemy_Move : MonoBehaviour
                 }
             }
         }
-    }
-
-    private void FixedUpdate()
-    {
         if (moving)
         {
-            target = GameObject.FindWithTag(playerObjectName).GetComponent<Transform>();
+            anim.SetBool("Moving", false);
             transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
             //body.velocity = (target.position - transform.position).normalized * moveSpeed;
+        }
+        else
+        {
+            anim.SetBool("Moving", true);
         }
     }
 
@@ -142,12 +138,11 @@ public class Rush_Enemy_Move : MonoBehaviour
     {
         while (enabled)
         {
+            moving = false;
+            gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             yield return new WaitForSeconds(jumpPause);
             moving = true;
             yield return new WaitForSeconds(hopTime);
-            moving = false;
-            body.velocity = Vector3.zero;
-            //Debug.Log("Waited for " + hopTime + " seconds, and it's now " + Time.time);
         }
     }
 }

@@ -35,7 +35,11 @@ public class MovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.GetComponent<HealthScript>().health <= 0)
+        if (lvl > 4)
+        {
+            lvl = 4;
+        }
+        if (gameObject.GetComponent<HealthScript>().health <= 0)
         {
             exp = 0;
             lvl -= 1;
@@ -67,6 +71,17 @@ public class MovementScript : MonoBehaviour
             if(!leveledUp1 && !leveledUp2 && !leveledUp3)
             {
                 levelUpDialogue1.TriggerDialogue();
+                leveledUp1 = true;
+            }
+            else if (!leveledUp2 && !leveledUp3)
+            {
+                levelUpDialogue2.TriggerDialogue();
+                leveledUp2 = true;
+            }
+            else if (!leveledUp3)
+            {
+                levelUpDialogue3.TriggerDialogue();
+                leveledUp3 = true;
             }
             h = 100;
             exp = 0;

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 64302741}
   m_Layer: 0
   m_Name: GameObject (4)
-  m_TagString: Shotgun
+  m_TagString: BounceShot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 99695782}
   m_Layer: 0
   m_Name: GameObject (4)
-  m_TagString: Shotgun
+  m_TagString: BounceShot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 729121691}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Shotgun
+  m_TagString: SpiralShot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 1341842207}
   m_Layer: 0
   m_Name: GameObject (5)
-  m_TagString: Shotgun
+  m_TagString: BounceShot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: 1563497389}
   m_Layer: 0
   m_Name: GameObject (1)
-  m_TagString: Shotgun
+  m_TagString: SpiralShot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -562,7 +562,7 @@ GameObject:
   - component: {fileID: 1925058168}
   m_Layer: 0
   m_Name: GameObject (6)
-  m_TagString: Shotgun
+  m_TagString: BounceShot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -606,7 +606,7 @@ GameObject:
   - component: {fileID: 2016436893}
   m_Layer: 0
   m_Name: GameObject (2)
-  m_TagString: Shotgun
+  m_TagString: SpiralShot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -650,7 +650,7 @@ GameObject:
   - component: {fileID: 2026827213}
   m_Layer: 0
   m_Name: GameObject (3)
-  m_TagString: Shotgun
+  m_TagString: SpiralShot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -984,6 +984,8 @@ GameObject:
   - component: {fileID: 3742366422971754421}
   - component: {fileID: 935093013}
   - component: {fileID: 3742366422971754420}
+  - component: {fileID: 1163955061583134529}
+  - component: {fileID: 306511592982484155}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -1074,7 +1076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 150
   exp: 0
-  lvl: 5
+  lvl: 0
 --- !u!114 &3742366422971754418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1188,7 +1190,7 @@ MonoBehaviour:
   - {fileID: 801295598517863264}
   - {fileID: 1347143803651382917}
   bpm: 60
-  character: {fileID: 0}
+  character: {fileID: 3742366422971754415}
 --- !u!114 &3742366422971754420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1211,6 +1213,41 @@ MonoBehaviour:
   maxXDistance: 5
   maxYDistance: 5
   maxEnemies: 25
+  spawnLocations: []
+  availableEnemies: []
+  spawnBatchAmt: 6
+  dialogueDone: 1
+--- !u!114 &1163955061583134529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3742366422971754415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a152260b9d02ae84a81b613aa08412d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &306511592982484155
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3742366422971754415}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0374195da069ef3439bd932d2072b0b0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5420156721267523286
 GameObject:
   m_ObjectHideFlags: 0

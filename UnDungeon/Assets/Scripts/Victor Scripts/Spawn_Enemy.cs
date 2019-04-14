@@ -13,13 +13,23 @@ public class Spawn_Enemy : MonoBehaviour
     public int timeBetweenSpawn;
     public float maxXDistance;
     public float maxYDistance;
-    private int enemyAmt = 0;
+    public int enemyAmt = 0;
     public int maxEnemies;
+    public int shooterAmt = 0;
+    public int maxShooters;
+    public GameObject[] spawnLocations;
+    public GameObject[] availableEnemies;
+    public int spawnBatchAmt = 6;
+    public bool dialogueDone = true;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Spawn());
+        spawnLocations = GameObject.FindGameObjectsWithTag("Spawn Locations");
+        availableEnemies = new GameObject[] { enemy1, enemy2, enemy3, enemy4, enemy5, enemy6 };
+        //to be removed when dialouge is implemented
+        startSpawning();
     }
 
     // Update is called once per frame
@@ -34,13 +44,11 @@ public class Spawn_Enemy : MonoBehaviour
         {
             if (enemyAmt < maxEnemies)
             {
-                Instantiate(enemy1, new Vector3(Random.Range(-maxXDistance, maxXDistance), Random.Range(-maxYDistance, maxYDistance), 0), Quaternion.identity);
-                Instantiate(enemy2, new Vector3(Random.Range(-maxXDistance, maxXDistance), Random.Range(-maxYDistance, maxYDistance), 0), Quaternion.identity);
-                Instantiate(enemy3, new Vector3(Random.Range(-maxXDistance, maxXDistance), Random.Range(-maxYDistance, maxYDistance), 0), Quaternion.identity);
-                Instantiate(enemy4, new Vector3(Random.Range(-maxXDistance, maxXDistance), Random.Range(-maxYDistance, maxYDistance), 0), Quaternion.identity);
-                Instantiate(enemy5, new Vector3(Random.Range(-maxXDistance, maxXDistance), Random.Range(-maxYDistance, maxYDistance), 0), Quaternion.identity);
-                Instantiate(enemy6, new Vector3(Random.Range(-maxXDistance, maxXDistance), Random.Range(-maxYDistance, maxYDistance), 0), Quaternion.identity);
-                enemyAmt += 6;
+                for (int i = 0; i < spawnBatchAmt; i++)
+                {
+                    Instantiate(getRandomEnemy(availableEnemies), getRandomItem(spawnLocations).transform.position, Quaternion.identity);
+                    enemyAmt += 1;
+                }
             }
             yield return new WaitForSeconds(timeBetweenSpawn);
 
@@ -50,6 +58,39 @@ public class Spawn_Enemy : MonoBehaviour
 
     public void enemyDied()
     {
-        enemyAmt -= 1;
+        enemyAmt --;
+    }
+
+    public void shooterDied()
+    {
+        shooterAmt --;
+    }
+
+    public GameObject getRandomItem(GameObject[] items)
+    {
+        return items[Random.Range(0, items.Length)];
+    }
+
+    public GameObject getRandomEnemy(GameObject[] enemies)
+    {
+        GameObject chosen = enemies[Random.Range(0, enemies.Length)];
+        if (chosen == enemy3 || chosen == enemy6)
+        {
+            if(shooterAmt < maxShooters)
+            {
+                shooterAmt++;
+                return chosen;
+            }
+            else
+            {
+                return getRandomEnemy(enemies);
+            }
+        }
+        return chosen;
+    }
+
+    public void startSpawning()
+    {
+        StartCoroutine(Spawn());
     }
 }

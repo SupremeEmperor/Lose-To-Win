@@ -20,7 +20,7 @@ public class GunFire : MonoBehaviour
         beatCount = 1;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         BeatFire();
     }
@@ -69,7 +69,7 @@ public class GunFire : MonoBehaviour
                 temp = beatThree.Length;
                 break;
             case 3:
-                temp = beatThree.Length;
+                temp = beatFour.Length;
                 break;
         }
 
@@ -79,7 +79,7 @@ public class GunFire : MonoBehaviour
             switch (beat)
             {
                 case 0:
-                    
+                    //Debug.Log(1);
                     
                         if (beatOne[i].tag == "Shotgun")
                         {
@@ -98,20 +98,32 @@ public class GunFire : MonoBehaviour
                         
                     break;
                 case 1:
+                    //Debug.Log(2);
                     if (beatTwo[i].tag == "Shotgun")
+                    {
+                        beatTwo[i].GetComponent<Shotgun>().Fire();
+                    }
+
+                    if (beatTwo[i].tag == "SpiralShot" && lvl >= 5)
                     {
                         beatTwo[i].GetComponent<Shotgun>().Fire();
                     }
 
                     break;
                 case 2:
+                    //Debug.Log(3);
                     if (beatThree[i].tag == "Shotgun")
                     {
                         beatThree[i].GetComponent<Shotgun>().Fire();
                     }
 
+                    if (beatThree[i].tag == "BounceShot" && lvl >= 4)
+                    {
+                        beatThree[i].GetComponent<Shotgun>().Fire();
+                    }
                     break;
                 case 3:
+                    Debug.Log(4);
                     if (beatFour[i].tag == "Shotgun")
                     {
                         beatFour[i].GetComponent<Shotgun>().Fire();

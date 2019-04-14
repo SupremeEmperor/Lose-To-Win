@@ -17,6 +17,11 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void LoadAbout()
+    {
+        SceneManager.LoadScene("About");
+    }
+
     public void LoadCredits()
     {
         Debug.Log("Loading credits...");

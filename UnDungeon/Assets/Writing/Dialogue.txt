@@ -90,7 +90,7 @@ STARTING LEVEL 4
 LEAVING LEVEL 4 (END OF GAME)
 
 	RHEIN: I told you I was stronger than you, even without my magic.
-			I'm useless to you now
+			I'm useless to you now.
 			My magic is gone - I can no longer be your vessel.
 
 	CROWN of KHA'EVOS: NO!

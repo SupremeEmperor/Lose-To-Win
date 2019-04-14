@@ -127,6 +127,7 @@ MonoBehaviour:
   anim: {fileID: 5321675116746601581}
   shootPause: 2
   bullet: {fileID: 6552942327571723658, guid: dff96868a6f4ee7429cc80881608b57a, type: 3}
+  death: {fileID: 3287617760670992416, guid: 177181fb417fe27429049b3267d1928c, type: 3}
 --- !u!114 &5321675116746601555
 MonoBehaviour:
   m_ObjectHideFlags: 0

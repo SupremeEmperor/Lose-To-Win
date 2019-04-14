@@ -13,12 +13,15 @@ public class Remove_From_Wall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(Vector2.zero, 10, 5);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(Vector2.zero, 10);
         if (colliders.Length > 0)
         {
             foreach (Collider2D col in colliders)
             {
-                Destroy(col.gameObject);
+                if (col.gameObject.tag == "Enemy")
+                {
+                    Destroy(col.gameObject);
+                }
             }
         }
     }

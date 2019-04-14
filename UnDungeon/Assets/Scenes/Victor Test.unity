@@ -6568,6 +6568,16 @@ PrefabInstance:
       propertyPath: levelUpDialogue1
       value: 
       objectReference: {fileID: 1924888264}
+    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
+        type: 3}
+      propertyPath: speed
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
+        type: 3}
+      propertyPath: noEnemies
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 935093013, guid: e60848566d23b764da19fe6501898a64, type: 3}
       propertyPath: character
       value: 
@@ -6598,7 +6608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 815a4ea6449177c4abe10502d8cb107b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseMenuUI: {fileID: 1705254341}
+  PauseMenuUI: {fileID: 0}
 --- !u!1001 &1166005233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6683,12 +6693,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21, type: 3}
---- !u!1 &1705254341 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4306736452367094147, guid: 31b4a30ddd2a0cd4383d59db3a709d25,
-    type: 3}
-  m_PrefabInstance: {fileID: 7168707261676782952}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1924888264 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4011516592471524320, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21,
@@ -21915,6 +21919,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: All Doors
       objectReference: {fileID: 0}
+    - target: {fileID: 4306736452367094147, guid: 31b4a30ddd2a0cd4383d59db3a709d25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2079415706637768568, guid: 31b4a30ddd2a0cd4383d59db3a709d25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22002,11 +22011,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4306736452367094147, guid: 31b4a30ddd2a0cd4383d59db3a709d25,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4306736452812246103, guid: 31b4a30ddd2a0cd4383d59db3a709d25,
         type: 3}

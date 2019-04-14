@@ -1090,6 +1090,10 @@ MonoBehaviour:
   leveledUp1: 0
   leveledUp2: 0
   leveledUp3: 0
+  deathAnim: {fileID: 3287617760670992416, guid: 177181fb417fe27429049b3267d1928c,
+    type: 3}
+  lvlUpAnim: {fileID: 5880059036214618344, guid: fc19cc84f1b849c48b410727af5d8061,
+    type: 3}
 --- !u!114 &3742366422971754418
 MonoBehaviour:
   m_ObjectHideFlags: 0

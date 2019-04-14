@@ -15,7 +15,7 @@ public class HealthBar : MonoBehaviour
 
     public void Update()
     {
-        Debug.Log("Health" + healthScript.health);
+        //Debug.Log("Health" + healthScript.health);
         healthBar.fillAmount = healthScript.health / 100f;
     }
 }

@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8339409d33a60ca4dae657f607cb04b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 4
   rb: {fileID: 4841259623319931374}
 --- !u!95 &7350603230999255242
 Animator:
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28c0937daed96848a39b554655a8233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 20
   direction: 1
   bounces: 3
   go: {fileID: 2505974302247748113}
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28c0937daed96848a39b554655a8233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 20
   direction: -1
   bounces: 3
   go: {fileID: 2505974302247748113}
@@ -347,4 +347,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76aa59062cc547e4a8c668668a117a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
+  damage: 20

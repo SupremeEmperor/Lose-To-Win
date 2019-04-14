@@ -11,10 +11,10 @@ public class SpiralShot : MonoBehaviour
         check++;
         if(check%3 == 2)
         {
-            gameObject.transform.Rotate(new Vector3(0, 0, 5));
+            gameObject.transform.Rotate(new Vector3(0, 0, -2F));
         }
 
-        if (check == 200)
+        if (check == 300)
             Destroy(this.gameObject);
     }
 }

@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300006, guid: e4e4a3834bb6af0469801981f596647e, type: 3}
   m_Color: {r: 1, g: 1, b: 0, a: 1}
   m_FlipX: 0
@@ -118,7 +118,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObjectName: Player
-  speed: 2
   rotationSpeed: 0
   expDrop: 5
   healthScript: {fileID: 5321675116746601555}
@@ -127,7 +126,7 @@ MonoBehaviour:
   drop: {fileID: 3892661739250303748, guid: 4dcb5c061f6190f43bb450a712000f58, type: 3}
   anim: {fileID: 5321675116746601581}
   shootPause: 2
-  bullet: {fileID: 2505974302247748113, guid: d9e48f2794351c841acd5cbe8516d4db, type: 3}
+  bullet: {fileID: 6552942327571723658, guid: dff96868a6f4ee7429cc80881608b57a, type: 3}
 --- !u!114 &5321675116746601555
 MonoBehaviour:
   m_ObjectHideFlags: 0

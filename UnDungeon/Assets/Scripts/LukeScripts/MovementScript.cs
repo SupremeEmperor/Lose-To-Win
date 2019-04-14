@@ -17,10 +17,15 @@ public class MovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.GetComponent<HealthScript>().health == 0)
+        if(gameObject.GetComponent<HealthScript>().health <= 0)
         {
             lvl -= 1;
-            gameObject.GetComponent<HealthScript>().health = lvl * 20;
+            gameObject.GetComponent<HealthScript>().health = 100;
+            if (lvl < 0)
+            {
+                lvl = 0;
+                gameObject.GetComponent<HealthScript>().health = 100;
+            }
         }
     }
 
@@ -37,15 +42,15 @@ public class MovementScript : MonoBehaviour
     {
         int h = gameObject.GetComponent<HealthScript>().health;
         exp += xpAmount;
-        if(exp == 100)
+        if(exp >= 100)
         {
             lvl++;
             h = 100;
             exp = 0;
         }
-        if (lvl > 5)
+        if (lvl > 4)
         {
-            lvl = 5;
+            lvl = 4;
         }
 
     }

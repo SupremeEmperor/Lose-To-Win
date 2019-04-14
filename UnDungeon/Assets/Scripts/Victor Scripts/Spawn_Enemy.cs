@@ -21,6 +21,8 @@ public class Spawn_Enemy : MonoBehaviour
     public GameObject[] availableEnemies;
     public int spawnBatchAmt = 6;
     public bool dialogueDone = true;
+    public GameObject character;
+    private int lvl;
 
     //Arrays: [6*1] [1, 2] [1, 2, 3] [1, 2, 3, 4] [1, 2, 3, 4, 5] [1, 2, 3, 4, 5, 6]
     //Parse in level => From character level, choose a different array
@@ -32,19 +34,28 @@ public class Spawn_Enemy : MonoBehaviour
         availableEnemies = new GameObject[] { enemy1, enemy2, enemy3, enemy4, enemy5, enemy6 };
         //to be removed when dialouge is implemented
         startSpawning();
+        character = GameObject.FindGameObjectWithTag("Player");
+        lvl = character.GetComponent<MovementScript>().lvl;
     }
 
     // Update is called once per frame
     void Update()
     {
+        lvl = character.GetComponent<MovementScript>().lvl;
+    }
 
+    public void Clear()
+    {
+        shooterAmt = 0;
+        enemyAmt = 0;
     }
 
     IEnumerator Spawn()
     {
         while (enabled)
         {
-            if (enemyAmt < maxEnemies)
+            lvl = character.GetComponent<MovementScript>().lvl;
+            if (enemyAmt < maxEnemies && lvl > 0)
             {
                 for (int i = 0; i < spawnBatchAmt; i++)
                 {
@@ -75,7 +86,29 @@ public class Spawn_Enemy : MonoBehaviour
 
     public GameObject getRandomEnemy(GameObject[] enemies)
     {
-        GameObject chosen = enemies[Random.Range(0, enemies.Length)];
+        GameObject chosen;
+        switch (lvl)
+        {
+            case 1:
+                chosen = enemies[Random.Range(0, 1)];
+                break;
+            case 2:
+                chosen = enemies[Random.Range(0, 2)];
+                break;
+            case 3:
+                chosen = enemies[Random.Range(1, 3)];
+                break;
+            case 4:
+                chosen = enemies[Random.Range(2, 5)];
+                break;
+            case 5:
+                chosen = enemies[Random.Range(5, 6)];
+                break;
+            default:
+                chosen = enemies[Random.Range(0, enemies.Length)];
+                break;
+        }
+        
         if (chosen == enemy3 || chosen == enemy6)
         {
             if(shooterAmt < maxShooters)
@@ -85,7 +118,7 @@ public class Spawn_Enemy : MonoBehaviour
             }
             else
             {
-                return getRandomEnemy(enemies);
+                return enemies[0];
             }
         }
         return chosen;

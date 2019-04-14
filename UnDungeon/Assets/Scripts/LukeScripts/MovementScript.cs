@@ -8,6 +8,18 @@ public class MovementScript : MonoBehaviour
     public int exp = 0;
     public int lvl = 5;
     public bool noEnemies;
+    public DialogueTrigger levelUpDialogue1;
+    public DialogueTrigger levelUpDialogue2;
+    public DialogueTrigger levelUpDialogue3;
+    public DialogueTrigger levelDownTo3;
+    public DialogueTrigger levelDownTo2;
+    public DialogueTrigger levelDownTo1;
+    public bool leveledDownTo3 = false;
+    public bool leveledDownTo2 = false;
+    public bool leveledDownTo1 = false;
+    public bool leveledUp1 = false;
+    public bool leveledUp2 = false;
+    public bool leveledUp3 = false;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +64,10 @@ public class MovementScript : MonoBehaviour
         if(exp >= 100)
         {
             lvl++;
+            if(!leveledUp1 && !leveledUp2 && !leveledUp3)
+            {
+                levelUpDialogue1.TriggerDialogue();
+            }
             h = 100;
             exp = 0;
         }

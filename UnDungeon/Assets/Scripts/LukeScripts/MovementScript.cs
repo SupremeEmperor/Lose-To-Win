@@ -76,7 +76,8 @@ public class MovementScript : MonoBehaviour
             }
             else if (!leveledUp3)
             {
-
+                levelUpDialogue3.TriggerDialogue();
+                leveledUp3 = true;
             }
             h = 100;
             exp = 0;

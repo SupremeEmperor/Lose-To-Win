@@ -13,8 +13,10 @@ public class Spawn_Enemy : MonoBehaviour
     public int timeBetweenSpawn;
     public float maxXDistance;
     public float maxYDistance;
-    private int enemyAmt = 0;
+    public int enemyAmt = 0;
     public int maxEnemies;
+    public int shooterAmt = 0;
+    public int maxShooters;
     public GameObject[] spawnLocations;
     public GameObject[] availableEnemies;
     public int spawnBatchAmt = 6;
@@ -56,7 +58,12 @@ public class Spawn_Enemy : MonoBehaviour
 
     public void enemyDied()
     {
-        enemyAmt -= 1;
+        enemyAmt --;
+    }
+
+    public void shooterDied()
+    {
+        shooterAmt --;
     }
 
     public GameObject getRandomItem(GameObject[] items)
@@ -66,8 +73,20 @@ public class Spawn_Enemy : MonoBehaviour
 
     public GameObject getRandomEnemy(GameObject[] enemies)
     {
-        Debug.Log(enemies.Length);
-        return enemies[Random.Range(0, enemies.Length)];
+        GameObject chosen = enemies[Random.Range(0, enemies.Length)];
+        if (chosen == enemy3 || chosen == enemy6)
+        {
+            if(shooterAmt < maxShooters)
+            {
+                shooterAmt++;
+                return chosen;
+            }
+            else
+            {
+                return getRandomEnemy(enemies);
+            }
+        }
+        return chosen;
     }
 
     public void startSpawning()

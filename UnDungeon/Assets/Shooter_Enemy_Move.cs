@@ -36,6 +36,7 @@ public class Shooter_Enemy_Move : MonoBehaviour
         {
             playerScript.addXP(expDrop);
             spawnScript.enemyDied();
+            spawnScript.shooterDied();
             if (Random.Range(0, 100) <= 15)
             {
                 Instantiate(drop, transform.position, transform.rotation);
@@ -50,7 +51,7 @@ public class Shooter_Enemy_Move : MonoBehaviour
         while (enabled)
         {
             target = GameObject.FindWithTag(playerObjectName).GetComponent<Transform>().position;
-            Debug.Log("boop");
+            //Debug.Log("boop");
             if (target.x - transform.position.x > 0)
             {
                 if (target.y - transform.position.y > 0)
@@ -126,13 +127,12 @@ public class Shooter_Enemy_Move : MonoBehaviour
                 }
             }
             yield return new WaitForSeconds(shootPause);
-            shoot(target);
+            
         }
     }
 
     public void shoot(Vector3 target)
     {
-        bulletPos = transform.position;
-        Instantiate(bullet, bulletPos, Quaternion.Euler(target)).GetComponent<Rigidbody2D>().velocity = target * speed;
+        Instantiate(bullet, transform.position, Quaternion.identity);
     }
 }

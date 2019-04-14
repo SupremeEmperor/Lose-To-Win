@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 1002264728009621609}
   m_Layer: 0
   m_Name: Back Shield
-  m_TagString: Wall
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 1002264728564589787}
   m_Layer: 0
   m_Name: Left Shield
-  m_TagString: Wall
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 1002264728716731321}
   m_Layer: 0
   m_Name: Forward Shield
-  m_TagString: Wall
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 1002264729046848634}
   m_Layer: 0
   m_Name: Right Shield
-  m_TagString: Wall
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

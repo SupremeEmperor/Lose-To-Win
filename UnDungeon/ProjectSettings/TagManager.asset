@@ -14,6 +14,7 @@ TagManager:
   - SpiralShot
   - BounceShot
   - Spawn Locations
+  - Shield
   layers:
   - Default
   - TransparentFX

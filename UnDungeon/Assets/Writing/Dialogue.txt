@@ -8,18 +8,14 @@ STARTING LEVEL 1 (for 1st time)
 	???: Oh, calm down. You've never heard of a sentient crown before?
 		 Surely you knew of the treasures and majesty that awaited your successful plunder of this dungeon?
 	CROWN of KHA'EVOS: The legend of the Crown of Kha'evos?
-
-	RHEIN: I...
-
-	CROWN of KHA'EVOS: Well, why else did you come down here but for the riches and eternal glory I have offer?
+						Well, why else did you come down here but for the riches and eternal glory I have offer?
 
 	RHEIN: Riches? ... Eternal glory?
 
-	CROWN of KHA'EVOS: Yes, young one.
-						And I only need one thing from you in return...
+	CROWN of KHA'EVOS: Yes, young one. And I only need one thing from you in return...
 (slower, with a text effect)
 						B L O O D.
-(normal)
+
 						Careful there, you're looking a little faint. Come on, it'll be fun!
 						We'll go wreak havoc on the world! It'll be great!
 						Just like old times, before I was so rudely, er, forgotten in this dungeon.
@@ -90,18 +86,11 @@ STARTING LEVEL 4
 
 
 
-STARTING LEVEL 5
 
-	CROWN of KHA'EVOS: 
-
-	RHEIN: 
-
-
-
-LEAVING LEVEL 5 (END OF GAME)
+LEAVING LEVEL 4 (END OF GAME)
 
 	RHEIN: I told you I was stronger than you, even without my magic.
-			I'm useless to you now.
+			I'm useless to you now
 			My magic is gone - I can no longer be your vessel.
 
 	CROWN of KHA'EVOS: NO!
@@ -121,7 +110,7 @@ LEAVING LEVEL 5 (END OF GAME)
 
 
 
-
+//Optional Backwards (if there's time)
 BACKWARDS
 
 	CROWN of KHA'EVOS: Yes, Rhein, feel yourself grow stronger.

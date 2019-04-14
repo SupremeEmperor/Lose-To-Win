@@ -18,8 +18,13 @@ public class angleShot : MonoBehaviour
             bounces--;
             if (bounces <= 0)
             {
-                Destroy(this.gameObject);
+                Destroy(go);
             }
+        }
+        if(collision.tag == "Enemy")
+        {
+            collision.GetComponent<HealthScript>().dealDamage(damage);
+            Destroy(go);
         }
 
     }

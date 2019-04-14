@@ -1,0 +1,132 @@
+STARTING LEVEL 1 (for 1st time)
+
+	???: Ahh... awake at last.
+		 Thank you, young adventurer.
+
+	RHEIN: Wh-Who's speaking?
+
+	???: Oh, calm down. You've never heard of a sentient crown before?
+		 Surely you knew of the treasures and majesty that awaited your successful plunder of this dungeon?
+	CROWN of KHA'EVOS: The legend of the Crown of Kha'evos?
+
+	RHEIN: I...
+
+	CROWN of KHA'EVOS: Well, why else did you come down here but for the riches and eternal glory I have offer?
+
+	RHEIN: Riches? ... Eternal glory?
+
+	CROWN of KHA'EVOS: Yes, young one.
+						And I only need one thing from you in return...
+(slower, with a text effect)
+						B L O O D.
+(normal)
+						Careful there, you're looking a little faint. Come on, it'll be fun!
+						We'll go wreak havoc on the world! It'll be great!
+						Just like old times, before I was so rudely, er, forgotten in this dungeon.
+						Hey! Are you trying to put me back in the chest?
+						That's rude, I thought we were bonding! And here I opened up to you!
+
+	RHEIN: I'm not going to help you hurt people!
+			Why can't I take you off!?
+
+	CROWN of KHA'EVOS: Hang on, that's not how this works.
+						You made it to the end of the dungeon, you can't just say "no thanks" to your prize.
+
+	RHEIN: You're no prize, you're a curse.
+
+	CROWN of KHA'EVOS: A curse? Is that what you think of me?
+						Allow me to demonstrate what you could be with my help.
+
+	RHEIN: No! I won't let you use me.
+
+	CROWN of KHA'EVOS: Oh, young adventurer...
+						You don't have a choice.
+
+	RHEIN: ... Yes, I do.
+			I can give up my powers.
+			I can prevent you from using my abilities for your gain.
+
+	CROWN of KHA'EVOS: You don't have the strength to resist me.
+
+
+
+
+STARTING LEVEL 2
+
+	CROWN of KHA'EVOS: You're getting weaker, young adventurer.
+						Think of all the progress you made.
+						All the spells you learned, all the strength you gained... all for nothing.
+
+	RHEIN: Shut up.
+
+	CROWN of KHA'EVOS: I can feel you fighting me. Stop fighting. Let go.
+						Let me give you everything you've ever dreamed of.
+
+	RHEIN: ...
+
+	CROWN of KHA'EVOS: Fine.
+						Then you'll be trapped here forever, serving me whether you like it or not.
+
+
+
+STARTING LEVEL 3
+
+	CROWN of KHA'EVOS: Your power dwindles, young adventurer.
+
+	RHEIN: My name is Rhein, and I am still stronger than you.
+
+	CROWN of KHA'EVOS: Are you?
+
+
+
+STARTING LEVEL 4
+
+	CROWN of KHA'EVOS: You must be scared, young one.
+
+	RHEIN: ...
+
+	CROWN of KHA'EVOS: You have lost nearly half of your power.
+						I could give it back, a hundred times over.
+
+
+
+STARTING LEVEL 5
+
+	CROWN of KHA'EVOS: 
+
+	RHEIN: 
+
+
+
+LEAVING LEVEL 5 (END OF GAME)
+
+	RHEIN: I told you I was stronger than you, even without my magic.
+			I'm useless to you now.
+			My magic is gone - I can no longer be your vessel.
+
+	CROWN of KHA'EVOS: NO!
+
+	RHEIN: I understand now.
+			This dungeon isn't meant to keep adventurers out...
+			it's supposed to keep you in. It's your prison.
+			And you will be trapped here for a very, very long time.
+
+	CROWN of KHA'EVOS: Think of the power, Rhein, the glory.
+						Nations would fall at your feet. Mountains of gold, jewels, the finest wine.
+						It could all be yours, Rhein, it could all be-
+
+(Rhein exits. The crown flies back in the room and lands on the floor.)
+
+
+
+
+
+
+BACKWARDS
+
+	CROWN of KHA'EVOS: Yes, Rhein, feel yourself grow stronger.
+						This is what we can do if we work together.
+
+	RHEIN: No!
+
+

@@ -20,6 +20,8 @@ public class MovementScript : MonoBehaviour
     public bool leveledUp1 = false;
     public bool leveledUp2 = false;
     public bool leveledUp3 = false;
+    public GameObject deathAnim;
+    public GameObject lvlUpAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +45,7 @@ public class MovementScript : MonoBehaviour
         {
             exp = 0;
             lvl -= 1;
+            Instantiate(deathAnim, this.transform.position, Quaternion.identity);
             gameObject.GetComponent<HealthScript>().health = 100;
             if (lvl < 0)
             {
@@ -83,7 +86,8 @@ public class MovementScript : MonoBehaviour
         if(exp >= 100)
         {
             lvl++;
-            if(!leveledUp1 && !leveledUp2 && !leveledUp3)
+            Instantiate(lvlUpAnim, this.transform.position, Quaternion.identity);
+            if (!leveledUp1 && !leveledUp2 && !leveledUp3)
             {
                 levelUpDialogue1.TriggerDialogue();
                 leveledUp1 = true;

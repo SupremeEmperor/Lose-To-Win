@@ -45,6 +45,21 @@ public class MovementScript : MonoBehaviour
                 lvl = 0;
                 gameObject.GetComponent<HealthScript>().health = 100;
             }
+            if(!leveledDownTo3 && !leveledDownTo2 && !leveledDownTo1)
+            {
+                levelDownTo3.TriggerDialogue();
+                leveledDownTo3 = true;
+            }
+            if(!leveledDownTo2 && !leveledDownTo1)
+            {
+                levelDownTo2.TriggerDialogue();
+                leveledDownTo2 = true;
+            }
+            if(!leveledDownTo1)
+            {
+                levelDownTo1.TriggerDialogue();
+                leveledDownTo1 = true;
+            }
         }
     }
 

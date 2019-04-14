@@ -15,6 +15,11 @@ public class Shield_Enemy_Move : MonoBehaviour
     public Spawn_Enemy spawnScript;
     private GameObject player;
     public GameObject drop;
+    public Animator anim;
+    public GameObject rightShield;
+    public GameObject leftShield;
+    public GameObject forwardShield;
+    public GameObject backShield;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +48,7 @@ public class Shield_Enemy_Move : MonoBehaviour
     {
         target = GameObject.FindWithTag(playerObjectName).GetComponent<Transform>();
         transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+        //logic for setting object direction, shield direction, and animations
         if(target.position.x - transform.position.x > 0)
         {
             if(target.position.y - transform.position.y > 0)
@@ -50,10 +56,26 @@ public class Shield_Enemy_Move : MonoBehaviour
                 if (target.position.x - transform.position.x > target.position.y - transform.position.y)
                 {
                     Debug.Log("Moving Right");
-                }
+                    anim.SetBool("Right", true);
+                    anim.SetBool("Left", false);
+                    anim.SetBool("Forward", false);
+                    anim.SetBool("Backwards", false);
+                    rightShield.SetActive(true);
+                    leftShield.SetActive(false);
+                    forwardShield.SetActive(false);
+                    backShield.SetActive(false);
+}
                 else
                 {
                     Debug.Log("Moving Up");
+                    anim.SetBool("Backwards", true);
+                    anim.SetBool("Right", false);
+                    anim.SetBool("Left", false);
+                    anim.SetBool("Forward", false);
+                    rightShield.SetActive(false);
+                    leftShield.SetActive(false);
+                    forwardShield.SetActive(false);
+                    backShield.SetActive(true);
                 }
             }
             else if (target.position.y - transform.position.y < 0)
@@ -61,10 +83,26 @@ public class Shield_Enemy_Move : MonoBehaviour
                 if (target.position.x - transform.position.x > -(target.position.y - transform.position.y))
                 {
                     Debug.Log("Moving Right");
+                    anim.SetBool("Right", true);
+                    anim.SetBool("Left", false);
+                    anim.SetBool("Forward", false);
+                    anim.SetBool("Backwards", false);
+                    rightShield.SetActive(true);
+                    leftShield.SetActive(false);
+                    forwardShield.SetActive(false);
+                    backShield.SetActive(false);
                 }
                 else
                 {
                     Debug.Log("Moving Down");
+                    anim.SetBool("Forward", true);
+                    anim.SetBool("Right", false);
+                    anim.SetBool("Left", false);
+                    anim.SetBool("Backwards", false);
+                    rightShield.SetActive(false);
+                    leftShield.SetActive(false);
+                    forwardShield.SetActive(true);
+                    backShield.SetActive(false);
                 }
             }
         }
@@ -75,10 +113,26 @@ public class Shield_Enemy_Move : MonoBehaviour
                 if (-(target.position.x - transform.position.x) > target.position.y - transform.position.y)
                 {
                     Debug.Log("Moving Left");
+                    anim.SetBool("Left", true);
+                    anim.SetBool("Backwards", false);
+                    anim.SetBool("Right", false);
+                    anim.SetBool("Forward", false);
+                    rightShield.SetActive(false);
+                    leftShield.SetActive(true);
+                    forwardShield.SetActive(false);
+                    backShield.SetActive(false);
                 }
                 else
                 {
                     Debug.Log("Moving Up");
+                    anim.SetBool("Backwards", true);
+                    anim.SetBool("Right", false);
+                    anim.SetBool("Left", false);
+                    anim.SetBool("Forward", false);
+                    rightShield.SetActive(false);
+                    leftShield.SetActive(false);
+                    forwardShield.SetActive(false);
+                    backShield.SetActive(true);
                 }
             }
             else if (target.position.y - transform.position.y < 0)
@@ -86,10 +140,26 @@ public class Shield_Enemy_Move : MonoBehaviour
                 if (-(target.position.x - transform.position.x) > -(target.position.y - transform.position.y))
                 {
                     Debug.Log("Moving Left");
+                    anim.SetBool("Left", true);
+                    anim.SetBool("Backwards", false);
+                    anim.SetBool("Right", false);
+                    anim.SetBool("Forward", false);
+                    rightShield.SetActive(false);
+                    leftShield.SetActive(true);
+                    forwardShield.SetActive(false);
+                    backShield.SetActive(false);
                 }
                 else
                 {
                     Debug.Log("Moving Down");
+                    anim.SetBool("Forward", true);
+                    anim.SetBool("Right", false);
+                    anim.SetBool("Left", false);
+                    anim.SetBool("Backwards", false);
+                    rightShield.SetActive(false);
+                    leftShield.SetActive(false);
+                    forwardShield.SetActive(true);
+                    backShield.SetActive(false);
                 }
             }
         }

@@ -6,6 +6,8 @@ public class MovementScript : MonoBehaviour
 {
     public int speed;
     public int exp = 0;
+    public int lvl = 5;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,5 +32,10 @@ public class MovementScript : MonoBehaviour
     public void addXP(int xpAmount)
     {
         exp += xpAmount;
+        if(exp == 100)
+        {
+            lvl++;
+            exp = 0;
+        }
     }
 }

@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class SpiralShot : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    int check;
     // Update is called once per frame
     void Update()
     {
-        
+        check++;
+        if(check%3 == 2)
+        {
+            gameObject.transform.Rotate(new Vector3(0, 0, 5));
+        }
+
+        if (check == 200)
+            Destroy(this.gameObject);
     }
 }

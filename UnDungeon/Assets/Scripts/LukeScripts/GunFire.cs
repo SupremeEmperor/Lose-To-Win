@@ -53,7 +53,24 @@ public class GunFire : MonoBehaviour
     // Update is called once per frame
     public void Fire(int beat)
     {
-        for (int i = 0; i < beatOne.Length; i++)
+        int temp = 0;
+        switch (beat)
+        {
+            case 0:
+                temp = beatOne.Length;
+                break;
+            case 1:
+                temp = beatTwo.Length;
+                break;
+            case 2:
+                temp = beatThree.Length;
+                break;
+            case 3:
+                temp = beatThree.Length;
+                break;
+        }
+
+        for (int i = 0; i < temp; i++)
         {
             
             switch (beat)

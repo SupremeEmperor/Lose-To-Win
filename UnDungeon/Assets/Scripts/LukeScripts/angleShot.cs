@@ -18,13 +18,15 @@ public class angleShot : MonoBehaviour
             bounces--;
             if (bounces <= 0)
             {
-                Destroy(go);
+                go.GetComponent<Bullet>().speed = 0;
+                go.GetComponent<Animator>().SetBool("Explode", true);
             }
         }
         if(collision.tag == "Enemy")
         {
             collision.GetComponent<HealthScript>().dealDamage(damage);
-            Destroy(go);
+            go.GetComponent<Bullet>().speed = 0;
+            go.GetComponent<Animator>().SetBool("Explode", true);
         }
 
     }

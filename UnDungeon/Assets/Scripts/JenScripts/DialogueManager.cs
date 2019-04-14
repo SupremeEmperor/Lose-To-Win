@@ -10,42 +10,41 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
 
     public Animator animator;
-
-    private Queue<string> sentences;
+    
+    private Queue<Dialogue> dialogue_q;
 
     // Start is called before the first frame update
     void Start()
     {
-        sentences = new Queue<string>();
+        dialogue_q = new Queue<Dialogue>();
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue[] conversation)
     {
         animator.SetBool("isOpen", true);
 
-        nameText.text = dialogue.name;
+        dialogue_q.Clear();
 
-        sentences.Clear();
-
-        foreach(string sentence in dialogue.sentences)
+        foreach (Dialogue dialogue in conversation)
         {
-            sentences.Enqueue(sentence);
+            dialogue_q.Enqueue(dialogue);
         }
-
-        DisplayNextSentence();
+        
+        DisplayNextDialogue();
     }
 
-    public void DisplayNextSentence()
+    public void DisplayNextDialogue()
     {
-        if (sentences.Count == 0)
+        if(dialogue_q.Count == 0)
         {
             EndDialogue();
             return;
         }
 
-        string sentence = sentences.Dequeue();
+        Dialogue dialogue = dialogue_q.Dequeue();
+        nameText.text = dialogue.name;
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+        StartCoroutine(TypeSentence(dialogue.sentence));
     }
 
     IEnumerator TypeSentence(string sentence)

@@ -20,13 +20,14 @@ public class GameManager : MonoBehaviour
     {
         if (character.GetComponent<MovementScript>().lvl == 0)
         {
-            character.GetComponent<MovementScript>().lvl = lastlvl;
+            //character.GetComponent<MovementScript>().lvl = lastlvl;
         }
         if (lastlvl != character.GetComponent<MovementScript>().lvl)
         {
             lastlvl = character.GetComponent<MovementScript>().lvl; 
             enemies = GameObject.FindGameObjectsWithTag("Enemy");
-            if(enemies.Length != 0)
+            character.GetComponent<MovementScript>().setNoEnemies(true);
+            if (enemies.Length != 0)
             {
                 destroyEnemies();
             }

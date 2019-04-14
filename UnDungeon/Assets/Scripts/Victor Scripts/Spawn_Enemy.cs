@@ -60,8 +60,7 @@ public class Spawn_Enemy : MonoBehaviour
     {
         while (enabled)
         {
-            lvl = character.GetComponent<MovementScript>().lvl;
-            if (enemyAmt < maxEnemies && lvl > 0)
+            if (enemyAmt < maxEnemies && !character.GetComponent<MovementScript>().noEnemies)
             {
                 for (int i = 0; i < spawnBatchAmt; i++)
                 {

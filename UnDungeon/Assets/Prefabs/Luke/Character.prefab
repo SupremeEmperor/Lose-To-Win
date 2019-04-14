@@ -1076,7 +1076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 150
   exp: 0
-  lvl: 0
+  lvl: 1
 --- !u!114 &3742366422971754418
 MonoBehaviour:
   m_ObjectHideFlags: 0

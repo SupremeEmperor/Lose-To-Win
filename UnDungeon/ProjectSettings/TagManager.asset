@@ -11,6 +11,8 @@ TagManager:
   - TriShot
   - Wall
   - Level Display
+  - SpiralShot
+  - BounceShot
   - Spawn Locations
   - Shield
   layers:

@@ -13,7 +13,7 @@ STARTING LEVEL 1 (for 1st time)
 	RHEIN: Riches? ... Eternal glory?
 
 	CROWN of KHA'EVOS: Yes, young one. And I only need one thing from you in return...
-(slower, with a text effect)
+
 						B L O O D.
 
 						Careful there, you're looking a little faint. Come on, it'll be fun!
@@ -119,3 +119,6 @@ BACKWARDS
 	RHEIN: No!
 
 
+
+
+	

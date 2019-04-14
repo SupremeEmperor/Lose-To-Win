@@ -15,6 +15,9 @@ public class SpiralShot : MonoBehaviour
         }
 
         if (check == 300)
-            Destroy(this.gameObject);
+        {
+            gameObject.GetComponent<Bullet>().speed = 0;
+            gameObject.GetComponent<Animator>().SetBool("Explode", true);
+        }
     }
 }

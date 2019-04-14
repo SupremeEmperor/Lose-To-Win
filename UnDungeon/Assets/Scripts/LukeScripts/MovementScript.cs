@@ -7,6 +7,7 @@ public class MovementScript : MonoBehaviour
     public int speed;
     public int exp = 0;
     public int lvl = 5;
+    public bool noEnemies;
 
     // Start is called before the first frame update
     void Start()
@@ -14,11 +15,17 @@ public class MovementScript : MonoBehaviour
         gameObject.GetComponent<GunFire>().Fire(1);
     }
 
+    public void setNoEnemies(bool input)
+    {
+        noEnemies = input;
+    }
+
     // Update is called once per frame
     void Update()
     {
         if(gameObject.GetComponent<HealthScript>().health <= 0)
         {
+            exp = 0;
             lvl -= 1;
             gameObject.GetComponent<HealthScript>().health = 100;
             if (lvl < 0)

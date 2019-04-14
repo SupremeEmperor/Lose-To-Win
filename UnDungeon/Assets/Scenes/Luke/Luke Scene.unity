@@ -1033,5 +1033,15 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 64302741, guid: e60848566d23b764da19fe6501898a64, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 2505974302247748113, guid: a5b5f16065e202f49910be967c39ecc7,
+        type: 3}
+    - target: {fileID: 1925058168, guid: e60848566d23b764da19fe6501898a64, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 2505974302247748113, guid: a5b5f16065e202f49910be967c39ecc7,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e60848566d23b764da19fe6501898a64, type: 3}

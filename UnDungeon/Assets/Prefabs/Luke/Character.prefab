@@ -1074,7 +1074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 150
   exp: 0
-  lvl: 0
+  lvl: 5
 --- !u!114 &3742366422971754418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1188,7 +1188,7 @@ MonoBehaviour:
   - {fileID: 801295598517863264}
   - {fileID: 1347143803651382917}
   bpm: 60
-  character: {fileID: 3742366422971754415}
+  character: {fileID: 0}
 --- !u!114 &3742366422971754420
 MonoBehaviour:
   m_ObjectHideFlags: 0

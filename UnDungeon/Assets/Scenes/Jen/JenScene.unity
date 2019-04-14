@@ -6281,5 +6281,85 @@ PrefabInstance:
       propertyPath: m_UiScaleMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7791811340186435744, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21,
+        type: 3}
+      propertyPath: conversation.conversation.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791811340186435744, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[0].sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791811340186435744, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[1].sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791811340186435744, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[2].sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791811340186435744, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[3].sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791811340186435744, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[0].name
+      value: Rhein
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791811340186435744, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[0].sentences.Array.data[0]
+      value: This is only a test.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791811340186435744, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[1].name
+      value: Crown
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791811340186435744, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[1].sentences.Array.data[0]
+      value: mwahahaha
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791811340186435744, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[1].sentences.Array.data[1]
+      value: am very bad
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791811340186435744, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[2].name
+      value: Rhein
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791811340186435744, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[2].sentences.Array.data[0]
+      value: It's
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791811340186435744, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[2].sentences.Array.data[1]
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791811340186435744, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[2].sentences.Array.data[2]
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791811340186435744, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[3].name
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791811340186435744, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[3].sentences.Array.data[0]
+      value: '!!!'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92ff391cbb4d4aa4f86dcf24b97b5a21, type: 3}

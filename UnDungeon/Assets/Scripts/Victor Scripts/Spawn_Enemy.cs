@@ -46,6 +46,7 @@ public class Spawn_Enemy : MonoBehaviour
 
     public void Clear()
     {
+        //This is a change
         shooterAmt = 0;
         enemyAmt = 0;
     }

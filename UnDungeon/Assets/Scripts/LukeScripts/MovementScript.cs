@@ -37,6 +37,10 @@ public class MovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        print("3 " + leveledDownTo3);
+        print("2 " + leveledDownTo2);
+        print("1 " + leveledDownTo1);
+
         if (lvl > 4)
         {
             lvl = 4;
@@ -54,16 +58,19 @@ public class MovementScript : MonoBehaviour
             }
             if(!leveledDownTo3 && !leveledDownTo2 && !leveledDownTo1)
             {
+                Debug.Log("Dialogue1");
                 levelDownTo3.TriggerDialogue();
                 leveledDownTo3 = true;
             }
-            if(!leveledDownTo2 && !leveledDownTo1)
+            else if(leveledDownTo3 && !leveledDownTo2 && !leveledDownTo1)
             {
+                Debug.Log("Dialogue2");
                 levelDownTo2.TriggerDialogue();
                 leveledDownTo2 = true;
             }
-            if(!leveledDownTo1)
+            else if(leveledDownTo3 && leveledDownTo2 && !leveledDownTo1)
             {
+                Debug.Log("Dialogue3");
                 levelDownTo1.TriggerDialogue();
                 leveledDownTo1 = true;
             }
@@ -83,7 +90,7 @@ public class MovementScript : MonoBehaviour
     {
         int h = gameObject.GetComponent<HealthScript>().health;
         exp += xpAmount;
-        if(exp >= 100)
+        if(exp >= 100 && lvl!= 4)
         {
             lvl++;
             Instantiate(lvlUpAnim, this.transform.position, Quaternion.identity);
@@ -92,12 +99,12 @@ public class MovementScript : MonoBehaviour
                 levelUpDialogue1.TriggerDialogue();
                 leveledUp1 = true;
             }
-            else if (!leveledUp2 && !leveledUp3)
+            else if (leveledUp1 && !leveledUp2 && !leveledUp3)
             {
                 levelUpDialogue2.TriggerDialogue();
                 leveledUp2 = true;
             }
-            else if (!leveledUp3)
+            else if (leveledUp1 && leveledUp2 && !leveledUp3)
             {
                 levelUpDialogue3.TriggerDialogue();
                 leveledUp3 = true;

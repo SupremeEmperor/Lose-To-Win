@@ -11,13 +11,14 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Start()
     {
-        player = (MovementScript)GameObject.FindWithTag("Player").GetComponent(typeof(MovementScript));
-        shooting = (GunFire)GameObject.FindWithTag("Player").GetComponent(typeof(GunFire));
+        
     }
 
     public void TriggerDialogue()
     {
         //Time.timeScale = 0f;
+        player = (MovementScript)GameObject.FindWithTag("Player").GetComponent(typeof(MovementScript));
+        shooting = (GunFire)GameObject.FindWithTag("Player").GetComponent(typeof(GunFire));
         player.setNoEnemies(true);
         shooting.setShoot(true);
         FindObjectOfType<DialogueManager>().StartDialogue(conversation.conversation);

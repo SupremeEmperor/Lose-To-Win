@@ -1077,13 +1077,14 @@ MonoBehaviour:
   speed: 300
   exp: 100
   lvl: 4
-  noEnemies: 0
+  noEnemies: 1
   levelUpDialogue1: {fileID: 0}
   levelUpDialogue2: {fileID: 0}
   levelUpDialogue3: {fileID: 0}
   levelDownTo3: {fileID: 0}
   levelDownTo2: {fileID: 0}
   levelDownTo1: {fileID: 0}
+  startDialogue: {fileID: 0}
   leveledDownTo3: 0
   leveledDownTo2: 0
   leveledDownTo1: 0
@@ -1094,6 +1095,7 @@ MonoBehaviour:
     type: 3}
   lvlUpAnim: {fileID: 5880059036214618344, guid: fc19cc84f1b849c48b410727af5d8061,
     type: 3}
+  move: 0
 --- !u!114 &3742366422971754418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1260,7 +1262,7 @@ Animator:
   m_GameObject: {fileID: 3742366422971754415}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0374195da069ef3439bd932d2072b0b0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1a53da7aa455a5e47af1b9d855168654, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

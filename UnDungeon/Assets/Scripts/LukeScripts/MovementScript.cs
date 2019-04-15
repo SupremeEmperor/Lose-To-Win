@@ -62,13 +62,13 @@ public class MovementScript : MonoBehaviour
                 levelDownTo3.TriggerDialogue();
                 leveledDownTo3 = true;
             }
-            if(leveledDownTo3 && !leveledDownTo2 && !leveledDownTo1)
+            else if(leveledDownTo3 && !leveledDownTo2 && !leveledDownTo1)
             {
                 Debug.Log("Dialogue2");
                 levelDownTo2.TriggerDialogue();
                 leveledDownTo2 = true;
             }
-            if(leveledDownTo3 && leveledDownTo2 && !leveledDownTo1)
+            else if(leveledDownTo3 && leveledDownTo2 && !leveledDownTo1)
             {
                 Debug.Log("Dialogue3");
                 levelDownTo1.TriggerDialogue();

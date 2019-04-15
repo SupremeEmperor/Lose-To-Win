@@ -83,7 +83,7 @@ public class MovementScript : MonoBehaviour
     {
         int h = gameObject.GetComponent<HealthScript>().health;
         exp += xpAmount;
-        if(exp >= 100)
+        if(exp >= 100 && lvl!= 4)
         {
             lvl++;
             Instantiate(lvlUpAnim, this.transform.position, Quaternion.identity);

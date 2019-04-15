@@ -7,7 +7,7 @@ public class MovementScript : MonoBehaviour
     public int speed;
     public int exp = 0;
     public int lvl = 5;
-    public bool noEnemies;
+    public bool noEnemies = false;
     public DialogueTrigger levelUpDialogue1;
     public DialogueTrigger levelUpDialogue2;
     public DialogueTrigger levelUpDialogue3;
@@ -30,6 +30,7 @@ public class MovementScript : MonoBehaviour
 
         gameObject.GetComponent<GunFire>().Fire(1);
         startDialogue.TriggerDialogue();
+        noEnemies = true;
     }
 
     public void setNoEnemies(bool input)

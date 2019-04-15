@@ -6,7 +6,6 @@ public class EndGame : MonoBehaviour
 {
     public GameObject crown;
     public DialogueTrigger levelDownTo3;
-    public bool leveledDownTo3 = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -14,6 +14,8 @@ public class Trigger_Script_Two : MonoBehaviour
     public GameObject spawnToActivate;
     public GameObject spawnToDeactivate;
     private Spawn_Enemy spawnscript;
+    public DialogueTrigger levelUpDialogue1;
+    public bool leveledUp1 = false;
 
     // Start is called before the first frame update
     void Start()

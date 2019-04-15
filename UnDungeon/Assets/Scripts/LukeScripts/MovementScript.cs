@@ -41,10 +41,6 @@ public class MovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print("3 " + leveledDownTo3);
-        print("2 " + leveledDownTo2);
-        print("1 " + leveledDownTo1);
-
         if (lvl > 4)
         {
             lvl = 4;

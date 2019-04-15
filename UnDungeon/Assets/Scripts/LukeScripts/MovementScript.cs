@@ -23,6 +23,7 @@ public class MovementScript : MonoBehaviour
     public bool leveledUp3 = false;
     public GameObject deathAnim;
     public GameObject lvlUpAnim;
+    public bool move;
 
     // Start is called before the first frame update
     void Start()
@@ -31,11 +32,17 @@ public class MovementScript : MonoBehaviour
         gameObject.GetComponent<GunFire>().Fire(1);
         startDialogue.TriggerDialogue();
         noEnemies = true;
+        move = false;
     }
 
     public void setNoEnemies(bool input)
     {
         noEnemies = input;
+    }
+
+    public void setStopMovement(bool input)
+    {
+        move = input;
     }
 
     // Update is called once per frame
@@ -83,11 +90,16 @@ public class MovementScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector3 force = new Vector3(speed * Input.GetAxisRaw("Horizontal"), speed * Input.GetAxisRaw("Vertical"), 0);
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector3(0, 0, 0);
+        if (move)
+        {
+            Vector3 force = new Vector3(speed * Input.GetAxisRaw("Horizontal"), speed * Input.GetAxisRaw("Vertical"), 0);
+
+            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector3(0, 0, 0);
+
+            gameObject.GetComponent<Rigidbody2D>().AddForce(force);
+        }
         
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector3(0,0,0);
-        
-        gameObject.GetComponent<Rigidbody2D>().AddForce(force);
     }
 
     public void addXP(int xpAmount)

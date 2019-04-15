@@ -65,6 +65,7 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool("isOpen", false);
         player.setNoEnemies(false);
         shooting.setShoot(true);
+        player.setStopMovement(true);
     }
    
 }

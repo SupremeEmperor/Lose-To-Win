@@ -8,7 +8,8 @@ public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
-
+    public MovementScript player;
+    public GunFire shooting;
     public Animator animator;
     
     private Queue<Dialogue> dialogue_q;
@@ -17,6 +18,8 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         dialogue_q = new Queue<Dialogue>();
+        player = (MovementScript)GameObject.FindWithTag("Player").GetComponent(typeof(MovementScript));
+        shooting = (GunFire)GameObject.FindWithTag("Player").GetComponent(typeof(GunFire));
     }
 
     public void StartDialogue(Dialogue[] conversation)
@@ -60,7 +63,8 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         animator.SetBool("isOpen", false);
-        //Time.timeScale = 1f;
+        player.setNoEnemies(false);
+        shooting.setShoot(false);
     }
    
 }

@@ -19,7 +19,7 @@ public class DisplayLevel : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("Is there");
+        //Debug.Log("Is there");
         levelDisplay.text = "Level " + moveScript.lvl.ToString();
     }
     //void OnGUI()

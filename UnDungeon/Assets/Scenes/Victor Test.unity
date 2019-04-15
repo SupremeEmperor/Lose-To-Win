@@ -6581,7 +6581,7 @@ PrefabInstance:
     - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
         type: 3}
       propertyPath: noEnemies
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3742366422971754417, guid: e60848566d23b764da19fe6501898a64,
         type: 3}
@@ -6638,6 +6638,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 306511592982484155, guid: e60848566d23b764da19fe6501898a64,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1a53da7aa455a5e47af1b9d855168654, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e60848566d23b764da19fe6501898a64, type: 3}
 --- !u!114 &1160329709 stripped

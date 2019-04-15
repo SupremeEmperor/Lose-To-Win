@@ -14,8 +14,8 @@ public class Trigger_Script_Two : MonoBehaviour
     public GameObject spawnToActivate;
     public GameObject spawnToDeactivate;
     private Spawn_Enemy spawnscript;
-    public DialogueTrigger levelUpDialogue1;
-    public bool leveledUp1 = false;
+    public DialogueTrigger levelDownTo3;
+    public bool leveledDownTo3 = false;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +41,12 @@ public class Trigger_Script_Two : MonoBehaviour
             spawnToActivate.SetActive(true);
             spawnscript.recalibrate();
             character.setNoEnemies(false);
+            if (!leveledDownTo3)
+            {
+                Debug.Log("Dialogue1");
+                levelDownTo3.TriggerDialogue();
+                leveledDownTo3 = true;
+            }
         }
     }
 }

@@ -6578,6 +6578,11 @@ PrefabInstance:
       propertyPath: startDialogue
       value: 
       objectReference: {fileID: 1629606186}
+    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
+        type: 3}
+      propertyPath: noEnemies
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3742366422971754417, guid: e60848566d23b764da19fe6501898a64,
         type: 3}
       propertyPath: m_LocalPosition.x

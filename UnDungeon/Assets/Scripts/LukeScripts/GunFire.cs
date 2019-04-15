@@ -12,14 +12,14 @@ public class GunFire : MonoBehaviour
     private int beatCount;
     private float beatInterval, beatTimer;
     public GameObject character;
-    bool shoot;
+    bool shoot = false;
 
 
     // Start is called before the first frame update
     void Start()
     {
         beatCount = 1;
-        shoot = true;
+        shoot = false;
     }
 
     public void setShoot(bool input)

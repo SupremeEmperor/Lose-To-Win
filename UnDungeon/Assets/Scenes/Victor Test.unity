@@ -6538,6 +6538,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3742366422971754415, guid: e60848566d23b764da19fe6501898a64,
+        type: 3}
+      propertyPath: m_Name
+      value: Character
+      objectReference: {fileID: 0}
     - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
         type: 3}
       propertyPath: levelUpDialogue1
@@ -6568,11 +6573,11 @@ PrefabInstance:
       propertyPath: levelDownTo1
       value: 
       objectReference: {fileID: 1160329709}
-    - target: {fileID: 3742366422971754415, guid: e60848566d23b764da19fe6501898a64,
+    - target: {fileID: 3742366422971754419, guid: e60848566d23b764da19fe6501898a64,
         type: 3}
-      propertyPath: m_Name
-      value: Character
-      objectReference: {fileID: 0}
+      propertyPath: startDialogue
+      value: 
+      objectReference: {fileID: 1629606186}
     - target: {fileID: 3742366422971754417, guid: e60848566d23b764da19fe6501898a64,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6795,6 +6800,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 815a4ea6449177c4abe10502d8cb107b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1629606186 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+    type: 3}
+  m_PrefabInstance: {fileID: 1226797456}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b38ca9ce91e59d94ab3769fc9a9b927f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1721866477 stripped

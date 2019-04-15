@@ -14,6 +14,7 @@ public class MovementScript : MonoBehaviour
     public DialogueTrigger levelDownTo3;
     public DialogueTrigger levelDownTo2;
     public DialogueTrigger levelDownTo1;
+    public DialogueTrigger startDialogue;
     public bool leveledDownTo3 = false;
     public bool leveledDownTo2 = false;
     public bool leveledDownTo1 = false;
@@ -26,7 +27,9 @@ public class MovementScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         gameObject.GetComponent<GunFire>().Fire(1);
+        startDialogue.TriggerDialogue();
     }
 
     public void setNoEnemies(bool input)

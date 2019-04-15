@@ -63,7 +63,7 @@ public class MovementScript : MonoBehaviour
                 lvl = 0;
                 gameObject.GetComponent<HealthScript>().health = 100;
             }
-            if(!leveledDownTo3 && !leveledDownTo2 && !leveledDownTo1)
+            /*if(!leveledDownTo3 && !leveledDownTo2 && !leveledDownTo1)
             {
                 Debug.Log("Dialogue1");
                 levelDownTo3.TriggerDialogue();
@@ -80,7 +80,7 @@ public class MovementScript : MonoBehaviour
                 Debug.Log("Dialogue3");
                 levelDownTo1.TriggerDialogue();
                 leveledDownTo1 = true;
-            }
+            }*/
         }
     }
 
@@ -106,7 +106,7 @@ public class MovementScript : MonoBehaviour
         {
             lvl++;
             Instantiate(lvlUpAnim, this.transform.position, Quaternion.identity);
-            if (!leveledUp1 && !leveledUp2 && !leveledUp3)
+            /*if (!leveledUp1 && !leveledUp2 && !leveledUp3)
             {
                 levelUpDialogue1.TriggerDialogue();
                 leveledUp1 = true;
@@ -120,7 +120,7 @@ public class MovementScript : MonoBehaviour
             {
                 levelUpDialogue3.TriggerDialogue();
                 leveledUp3 = true;
-            }
+            }*/
             h = 100;
             exp = 0;
         }

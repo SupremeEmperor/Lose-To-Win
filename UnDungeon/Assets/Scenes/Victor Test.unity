@@ -6729,6 +6729,274 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[24].sentence
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[23].sentence
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[25].sentence
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[25].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[24].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[21].sentence
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[20].sentence
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[22].sentence
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[22].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[21].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[23].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[2].sentence
+      value: The legend of the Crown of Kha'evos?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[0].sentence
+      value: 'Ahh... awake at last. Thank you, young adventurer.
+
+        ... Oh, calm down. You''ve never heard of a sentient crown before?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[1].sentence
+      value: Surely you knew of the treasures and majesty that awaited your successful
+        plunder of this dungeon?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[1].name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[3].sentence
+      value: Riches? ... Eternal glory?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[2].name
+      value: CROWN of KHA'EVOS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[3].name
+      value: RHEIN
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[4].sentence
+      value: Yes, young one. And I only need one thing from you in return...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[4].name
+      value: CROWN of KHA'EVOS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[5].sentence
+      value: B L O O D.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[5].name
+      value: CROWN of KHA'EVOS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[6].sentence
+      value: "Careful there, you're looking a little faint. Come on, it'll be fun!\r
+        We'll go wreak havoc on the world!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[6].name
+      value: CROWN of KHA'EVOS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[7].name
+      value: CROWN of KHA'EVOS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[7].sentence
+      value: Just like old times, before I was so rudely, er, forgotten in this dungeon.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[8].name
+      value: CROWN of KHA'EVOS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[8].sentence
+      value: Hey! Are you trying to put me back in the chest?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[9].name
+      value: CROWN of KHA'EVOS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[9].sentence
+      value: That's rude, I thought we were bonding! And here I opened up to you!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[10].name
+      value: RHEIN
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[10].sentence
+      value: 'I''m not going to help you hurt people!
+
+        Why can''t I take you off!?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[11].sentence
+      value: Hang on, that's not how this works. You made it to the end of the dungeon,
+        you can't just say "no thanks" to your prize.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[11].name
+      value: CROWN of KHA'EVOS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[12].sentence
+      value: You're no prize. You're a curse.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[12].name
+      value: RHEIN
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[13].sentence
+      value: A curse? Is that what you think of me?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[13].name
+      value: CROWN of KHA'EVOS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[14].name
+      value: CROWN of KHA'EVOS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[14].sentence
+      value: Allow me to demonstrate what you could be with my help.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[15].sentence
+      value: No! I won't let you use me.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[15].name
+      value: RHEIN
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[16].sentence
+      value: Oh, young adventurer... You don't have a choice.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[16].name
+      value: CROWN of KHA'EVOS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[17].sentence
+      value: '... Yes, I do.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[17].name
+      value: RHEIN
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[18].sentence
+      value: I can give up my powers and leave you trapped here. I can prevent you
+        from using my abilities for violence.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[18].name
+      value: RHEIN
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[19].sentence
+      value: You don't have the strength to resist me.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[19].name
+      value: CROWN of KHA'EVOS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6596952486819792086, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: conversation.conversation.Array.data[20].name
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833, type: 3}
 --- !u!1001 &1288310647

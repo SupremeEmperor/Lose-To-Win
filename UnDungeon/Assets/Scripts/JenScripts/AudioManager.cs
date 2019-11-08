@@ -1,6 +1,7 @@
 ﻿using UnityEngine.Audio;
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -11,12 +12,14 @@ public class AudioManager : MonoBehaviour
     
     void Awake()
     {
-        if (instance == null)
-        {
+        if (instance == null) {
             instance = this;
         }
-        else
-        {
+        else if (SceneManager.GetActiveScene().name == "Victor Test"){
+            Destroy(instance.gameObject);
+            instance = this;
+        }
+        else{
             Destroy(gameObject);
             return;
         }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -11,6 +11,8 @@ public class DialogueManager : MonoBehaviour
     public MovementScript player;
     public GunFire shooting;
     public Animator animator;
+
+    [SerializeField] bool isExitDialogue = false;
     
     private Queue<Dialogue> dialogue_q;
 
@@ -22,8 +24,9 @@ public class DialogueManager : MonoBehaviour
         shooting = (GunFire)GameObject.FindWithTag("Player").GetComponent(typeof(GunFire));
     }
 
-    public void StartDialogue(Dialogue[] conversation)
+    public void StartDialogue(Dialogue[] conversation, bool isExit)
     {
+        isExitDialogue = isExit;
         animator.SetBool("isOpen", true);
 
         dialogue_q.Clear();
@@ -38,10 +41,14 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextDialogue()
     {
-        if(dialogue_q.Count == 0)
+        if(dialogue_q.Count == 0 && !isExitDialogue)
         {
             EndDialogue();
             return;
+        }
+        else if(dialogue_q.Count == 0 && isExitDialogue)
+        {
+            returnToMainMenu();
         }
 
         Dialogue dialogue = dialogue_q.Dequeue();
@@ -66,6 +73,11 @@ public class DialogueManager : MonoBehaviour
         player.setNoEnemies(false);
         shooting.setShoot(true);
         player.setStopMovement(true);
+    }
+
+    void returnToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
    
 }

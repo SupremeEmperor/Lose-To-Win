@@ -6997,6 +6997,11 @@ PrefabInstance:
       propertyPath: conversation.conversation.Array.data[20].name
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6596952487789843384, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833,
+        type: 3}
+      propertyPath: isExitDialogue
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d9f017c9de7e6e488aa6d0bbc1c0833, type: 3}
 --- !u!1001 &1288310647

@@ -9,6 +9,8 @@ public class DialogueTrigger : MonoBehaviour
     public MovementScript player;
     public GunFire shooting;
 
+    [SerializeField] bool isExitDialogue = false;
+
     private void Start()
     {
         
@@ -21,7 +23,8 @@ public class DialogueTrigger : MonoBehaviour
         shooting = (GunFire)GameObject.FindWithTag("Player").GetComponent(typeof(GunFire));
         player.setNoEnemies(true);
         shooting.setShoot(false);
-        FindObjectOfType<DialogueManager>().StartDialogue(conversation.conversation);
+        player.setStopMovement(false);
+        FindObjectOfType<DialogueManager>().StartDialogue(conversation.conversation, isExitDialogue);
     }
 
 }

@@ -51,10 +51,13 @@ public class DialogueManager : MonoBehaviour
             returnToMainMenu();
         }
 
-        Dialogue dialogue = dialogue_q.Dequeue();
-        nameText.text = dialogue.name;
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(dialogue.sentence));
+        if (dialogue_q.Count != 0)
+        {
+            Dialogue dialogue = dialogue_q.Dequeue();
+            nameText.text = dialogue.name;
+            StopAllCoroutines();
+            StartCoroutine(TypeSentence(dialogue.sentence));
+        }
     }
 
     IEnumerator TypeSentence(string sentence)
@@ -77,6 +80,7 @@ public class DialogueManager : MonoBehaviour
 
     void returnToMainMenu()
     {
+        Status.WinGame = true;
         SceneManager.LoadScene("MainMenuTest");
     }
    

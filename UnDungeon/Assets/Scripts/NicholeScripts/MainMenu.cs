@@ -7,13 +7,11 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        Debug.Log("Starting game...");
         SceneManager.LoadScene("Victor Test");
     }
 
     public void QuitGame()
     {
-        Debug.Log("Quitting game...");
         Application.Quit();
     }
 
@@ -24,7 +22,6 @@ public class MainMenu : MonoBehaviour
 
     public void LoadCredits()
     {
-        Debug.Log("Loading credits...");
         SceneManager.LoadScene("Credits");
     }
 

@@ -77,7 +77,7 @@ public class DialogueManager : MonoBehaviour
 
     void returnToMainMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenuTest");
     }
    
 }

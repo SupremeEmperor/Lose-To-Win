@@ -17,12 +17,12 @@ public class MainMenu : MonoBehaviour
 
     public void LoadAbout()
     {
-        SceneManager.LoadScene("About");
+        SceneManager.LoadScene("AboutTest");
     }
 
     public void LoadCredits()
     {
-        SceneManager.LoadScene("Credits");
+        SceneManager.LoadScene("CreditsTest");
     }
 
 }

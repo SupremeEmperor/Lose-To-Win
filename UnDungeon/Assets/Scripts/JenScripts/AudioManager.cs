@@ -15,7 +15,7 @@ public class AudioManager : MonoBehaviour
         if (instance == null) {
             instance = this;
         }
-        else if (SceneManager.GetActiveScene().name == "Victor Test"){
+        else if (SceneManager.GetActiveScene().name == "Victor Test" || (instance.gameObject.GetComponent<AudioSource>().clip != this.GetComponent<AudioSource>().clip)){
             Destroy(instance.gameObject);
             instance = this;
         }

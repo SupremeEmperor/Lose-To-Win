@@ -5,22 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
-
-
     public Sound[] sounds;
     public static AudioManager instance;
     
     void Awake()
     {
-        if (instance == null) {
+        if (instance == null)
+        {
             instance = this;
         }
-        else if (SceneManager.GetActiveScene().name == "Victor Test" || (instance.gameObject.GetComponent<AudioSource>().clip != this.GetComponent<AudioSource>().clip)){
+        else 
+        {
             Destroy(instance.gameObject);
-            instance = this;
-        }
-        else{
-            Destroy(gameObject);
             return;
         }
 
@@ -35,21 +31,36 @@ public class AudioManager : MonoBehaviour
             s.source.pitch = s.pitch;
         }
     }
-
-    void Start()
+    
+    public void Start()
     {
-        Play("UnDungeon");
-
+        Play("Title");
     }
 
     public void Play(string name)
     {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
+        Sound s = Array.Find(sounds, sound => sound.source.clip.name == name);
         if (s == null)
         {
             Debug.LogWarning("Sound: " + name + " not found!");
-            return;
         }
-        s.source.Play();
+        else
+        {
+            DisableOtherSounds(name);
+            s.source.Play();
+        }
+    }
+    
+    public void ChangeSound(string name)
+    {
+        Play(name);
+    }
+    
+    private void DisableOtherSounds(string name)
+    {
+        foreach (Sound s in sounds)
+        {
+            if (s.source.clip.name != name) s.source.Stop();
+        }
     }
 }

@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] AudioManager instance = null;
+    
     public void PlayGame()
     {
         SceneManager.LoadScene("Victor Test");
+        instance.ChangeSound("UnDungeon");
     }
 
     public void QuitGame()

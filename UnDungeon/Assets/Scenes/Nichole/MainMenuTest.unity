@@ -488,6 +488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955fd3953bdbecf45b189ac14b48f5af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  instance: {fileID: 1726058426}
 --- !u!1 &243516186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,11 +1621,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8071638028440159940, guid: 2a4b6a727e3e81648a9eac899c96b4cc,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: d4ced4b7e50216844955f2b00e0bb8e0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a4b6a727e3e81648a9eac899c96b4cc, type: 3}
 --- !u!1 &1322611532
@@ -1756,6 +1752,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322611532}
   m_CullTransparentMesh: 0
+--- !u!114 &1726058426 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8071638028440159942, guid: 2a4b6a727e3e81648a9eac899c96b4cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1284506938}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 670796e2606b2a54e8265b6cabdf46d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1958421373
 GameObject:
   m_ObjectHideFlags: 0

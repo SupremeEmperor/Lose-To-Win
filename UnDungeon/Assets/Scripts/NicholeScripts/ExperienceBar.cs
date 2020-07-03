@@ -14,7 +14,7 @@ public class ExperienceBar : MonoBehaviour
     }
     public void Update()
     {
-        Debug.Log(moveScript.getXP());
+        // Debug.Log(moveScript.getXP());
         xpBar.fillAmount = moveScript.getXP() / 100f;
     }
 }
